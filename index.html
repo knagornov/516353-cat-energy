@@ -7,11 +7,13 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <a class="main-nav__logo logo">
-          <img class="logo__image" src="http://placehold.it/33x38" alt="Логотип">
-          <img class="logo__name" src="http://placehold.it/101x18" alt="Cat Energy">
-        </a>
-        <button class="main-nav__toggle">Открыть меню</button>
+        <div class="main-nav__top-bar">
+          <a class="main-nav__logo logo">
+            <img class="logo__image" src="http://placehold.it/33x38" width="33" height="38" alt="Логотип">
+            <img class="logo__name" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
+          </a>
+          <button class="main-nav__toggle">Открыть меню</button>
+        </div>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
             <a>Главная</a>
@@ -33,9 +35,9 @@
         <h2 class="food-program__title">Функциональное питание для котов</h2>
         <b class="food-program__slogan">Занялся собой? Займись котом!</b>
         <div class="food-program__image-wrapper">
-          <img class="food-program__image" src="http://placehold.it/280x270" alt="Cat Energy Pro">
+          <img class="food-program__image" src="http://placehold.it/280x270" width="280" height="270" alt="Фото Cat Energy Pro 500 грамм со вкусом курицы">
         </div>
-        <button class="food-program__choice button">Подобрать программу</button>
+        <a class="food-program__choice button">Подобрать программу</a>
       </section>
 
       <section class="categories">
@@ -75,51 +77,47 @@
       <section class="example">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <table class="example__stats stats">
+        <table class="example__stats">
           <tr>
-            <td class="stats__value">5 кг</td>
-            <td class="stats__value">60 дней</td>
+            <td class="example__value">5 кг</td>
+            <td class="example__value">60 дней</td>
           </tr>
           <tr>
-            <td class="stats__field">снижение веса</td>
-            <td class="stats__field">затрачено времени</td>
+            <td class="example__field">снижение веса</td>
+            <td class="example__field">затрачено времени</td>
           </tr>
         </table>
         <p class="example__costs">Затраты на питание: 15&nbsp;000&nbsp;руб.</p>
         <div class="example__slider slider">
           <ul class="slider__list">
             <li class="slider__item">
-              <img class="slider__image" src="http://placehold.it/311x240" alt="Толстый кот">
+              <img class="slider__image" src="http://placehold.it/311x240" alt="Фото толстого кота">
             </li>
             <li class="slider__item">
-              <img class="slider__image" src="http://placehold.it/311x240" alt="Стройный кот">
+              <img class="slider__image" src="http://placehold.it/311x240" alt="Фото стройного кота">
             </li>
           </ul>
           <p class="slider__control">
-            Было
+            <button class="slider__prev">Было</button>
             <button class="slider__toggle">
               <span class="visually-hidden">Переключить</span>
             </button>
-            Стало
+            <button class="slider__next">Стало</button>
           </p>
-        </div>
-      </section>
-
-      <section class="contacts">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__address-wrapper">
-          <b class="contacts__cooperation">Приглашаем к сотрудничеству дилеров!</b>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
-        <div class="contacts__map-wrapper">
-          <img class="contacts__map" src="http://placehold.it/320x400" alt="Большая Конюшенная, 19/8, Санкт-Петербург">
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
+      <div class="page-footer__contacts contacts">
+        <b class="contacts__cooperation">Приглашаем к сотрудничеству дилеров!</b>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <a class="page-footer__map map" href="#">
+        <img class="map__image" src="http://placehold.it/320x400" width="320" height="400" alt="Расположение на карте: Большая Конюшенная, 19/8, Санкт-Петербург">
+      </a>
       <a class="page-footer__logo logo">
-        <img class="logo__name" src="http://placehold.it/128x24" alt="Cat Energy">
+        <img class="logo__name" src="http://placehold.it/128x24" width="128" height="24" alt="Cat Energy">
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
@@ -133,7 +131,7 @@
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" >
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           HTML Academy
           <!-- Тут будет SVG -->
         </a>
