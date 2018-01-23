@@ -7,20 +7,22 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <a class="main-nav__logo logo" href="index.html">
-          <img class="logo__image" src="http://placehold.it/33x38" width="33" height="38" alt="Логотип">
-          <img class="logo__name" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
-        </a>
-        <button class="main-nav__toggle">Открыть меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+        <div class="main-nav__top-bar">
+          <a class="main-nav__logo logo" href="index.html">
+            <img class="logo__image" src="http://placehold.it/33x38" width="33" height="38" alt="Логотип">
+            <img class="logo__name" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
+          </a>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        </div>
+        <ul class="main-nav__list navigation">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">Главная</a>
           </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">Каталог продукции</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a>Подбор программы</a>
+          <li class="navigation__item navigation__item--active">
+            <a class="navigation__link">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -51,6 +53,10 @@
               <input class="form__field" type="text" name="age" placeholder="7">
             </label>
           </p>
+        </fieldset>
+
+        <fieldset class="form__field-group">
+          <legend class="visually-hidden">Цель</legend>
           <ul class="form__aims">
             <li class="form__aim">
               <input id="lose-weight" type="radio" name="aim" checked>
@@ -120,29 +126,33 @@
     <footer class="page-footer">
       <div class="page-footer__contacts contacts">
         <b class="contacts__cooperation">Приглашаем к сотрудничеству дилеров!</b>
-        <p class="contacts__address">ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8 Санкт-Петербург</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <a class="page-footer__map map" href="#">
-        <img class="map__image" src="http://placehold.it/320x400" width="320" height="400" alt="Большая Конюшенная, 19/8, Санкт-Петербург">
+        <img class="map__image" src="http://placehold.it/320x400" width="320" height="400" alt="Расположение на карте: Большая Конюшенная, 19/8, Санкт-Петербург">
       </a>
-      <a class="page-footer__logo logo" href="index.html">
-        <img class="logo__name" src="http://placehold.it/128x24" width="128" height="24" alt="Cat Energy">
-      </a>
+      <div class="page-footer__logo-wrapper">
+        <a class="page-footer__logo logo" href="index.html">
+          <img class="logo__name" src="http://placehold.it/128x24" width="128" height="24" alt="Cat Energy">
+        </a>
+      </div>
       <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
+        <li class="social__item social-button">
+          <a class="social-button__link social-button__link--vkontakte" href="#">Мы в Вконтакте</a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="#">Мы в Instagram</a>
+        <li class="social__item social-button">
+          <a class="social-button__link social-button__link--instagram" href="#">Мы в Instagram</a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Мы в Facebook</a>
+        <li class="social__item social-button">
+          <a class="social-button__link social-button__link--facebook" href="#">Мы в Facebook</a>
         </li>
       </ul>
-      <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
-        HTML Academy
-        <!-- Тут будет SVG -->
-      </a>
+      <div class="page-footer__copyright-wrapper">
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          HTML Academy
+          <!-- Тут будет SVG -->
+        </a>
+      </div>
     </footer>
   </body>
 </html>
