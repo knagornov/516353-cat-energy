@@ -1,0 +1,42 @@
+.page-footer__contacts {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page-footer__icons-wrapper {
+  background-color: #f2f2f2;
+}
+
+.page-footer__logo-wrapper {
+  display: flex;
+
+  width: 280px;
+  min-height: 94px;
+  margin-right: auto;
+  margin-left: auto;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__copyright-wrapper {
+  display: flex;
+
+  width: 280px;
+  min-height: 78px;
+  margin-right: auto;
+  margin-left: auto;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__copyright {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+
+  text-decoration: none;
+
+  color: #444;
+}

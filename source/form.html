@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Cat Energy - Подбор программы</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -12,7 +13,9 @@
             <img class="logo__image" src="http://placehold.it/33x38" width="33" height="38" alt="Логотип">
             <img class="logo__name" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
           </a>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </div>
         <ul class="main-nav__list navigation">
           <li class="navigation__item">
@@ -21,8 +24,8 @@
           <li class="navigation__item">
             <a class="navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="navigation__item navigation__item--active">
-            <a class="navigation__link">Подбор программы</a>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--active">Подбор программы</a>
           </li>
         </ul>
       </nav>

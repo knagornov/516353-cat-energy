@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-style: normal;
+
+  src: url("../fonts/oswaldmeduim.woff2") format("woff2"),
+  url("../fonts/oswaldmeduim.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+  url("../fonts/oswaldregular.woff") format("woff");
+}
+
+body {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+@import "blocks/visually-hidden.scss";
+@import "blocks/button.scss";
+@import "blocks/main-nav";
+@import "blocks/navigation.scss";
+@import "blocks/food-program.scss";
+@import "blocks/categories.scss";
+@import "blocks/food-categories.scss";
+@import "blocks/food-category.scss";
+@import "blocks/advantages.scss";
+@import "blocks/content-block.scss";
+@import "blocks/example.scss";
+@import "blocks/stats.scss";
+@import "blocks/slider.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/map.scss";
+@import "blocks/contacts.scss";
+@import "blocks/social.scss";
