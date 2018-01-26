@@ -6,17 +6,8 @@
   padding-left: 20px;
 
   border-bottom: #e6e6e6 solid 1px;
+  background-color: #fff;
 
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main-nav__logo {
-  display: flex;
-
-  width: 191px;
-
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -26,6 +17,7 @@
   width: 24px;
   height: 18px;
   margin: 0;
+  margin-left: auto;
   padding: 0;
 
   cursor: pointer;

@@ -1,10 +1,16 @@
 .contacts {
+  &--main-page {
+    background-color: #fff;
+  }
+}
+
+.contacts__wrapper {
   display: flex;
 
   width: 280px;
   min-height: 114px;
-
-  background-color: #fff;
+  margin-right: auto;
+  margin-left: auto;
 
   align-items: center;
 }

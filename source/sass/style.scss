@@ -3,8 +3,8 @@
   font-weight: 500;
   font-style: normal;
 
-  src: url("../fonts/oswaldmeduim.woff2") format("woff2"),
-  url("../fonts/oswaldmeduim.woff") format("woff");
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+  url("../fonts/oswaldmedium.woff") format("woff");
 }
 
 @font-face {
@@ -22,19 +22,33 @@ body {
   padding: 0;
 }
 
+//header
 @import "blocks/visually-hidden.scss";
 @import "blocks/button.scss";
-@import "blocks/main-nav";
+@import "blocks/main-nav.scss";
+@import "blocks/logo.scss";
 @import "blocks/navigation.scss";
+
+//content
+@import "blocks/page-main.scss";
+
+//index.html content
 @import "blocks/food-program.scss";
 @import "blocks/categories.scss";
 @import "blocks/food-categories.scss";
 @import "blocks/food-category.scss";
-@import "blocks/advantages.scss";
 @import "blocks/content-block.scss";
+@import "blocks/advantages.scss";
 @import "blocks/example.scss";
-@import "blocks/stats.scss";
 @import "blocks/slider.scss";
+
+//catalog.html content
+@import "blocks/catalog.scss";
+@import "blocks/food-item.scss";
+@import "blocks/decorated-block.scss";
+@import "blocks/additionally.scss";
+
+//footer
 @import "blocks/page-footer.scss";
 @import "blocks/map.scss";
 @import "blocks/contacts.scss";

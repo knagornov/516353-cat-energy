@@ -1,0 +1,61 @@
+.catalog {
+  padding-bottom: 23px;
+
+  border-bottom: 1px solid #ededed;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  border-top: 1px solid #ededed;
+}
+
+.catalog__show-more-container {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 26px;
+
+  text-align: center;
+}
+
+.catalog__show-more {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #111;
+
+  &::before {
+    display: block;
+
+    width: 30px;
+    height: 30px;
+    margin-right: auto;
+    margin-bottom: 26px;
+    margin-left: auto;
+
+    content: "";
+
+    opacity: 0.3;
+    background: url("../img/icon-plus-mobile.svg") no-repeat;
+  }
+}
+
+.catalog__tastes-info {
+  margin-top: 8px;
+  margin-bottom: 20px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #444;
+}
