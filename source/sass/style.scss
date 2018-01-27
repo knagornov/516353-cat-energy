@@ -45,8 +45,12 @@ body {
 //catalog.html content
 @import "blocks/catalog.scss";
 @import "blocks/food-item.scss";
-@import "blocks/decorated-block.scss";
 @import "blocks/additionally.scss";
+@import "blocks/additional-product.scss";
+
+
+//form.hhtml content
+@import "blocks/form.scss";
 
 //footer
 @import "blocks/page-footer.scss";

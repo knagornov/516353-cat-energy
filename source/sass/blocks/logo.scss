@@ -1,13 +1,19 @@
 .logo {
   display: flex;
 
-  width: 128px;
-  height: 24px;
-
   outline: none;
 
-  justify-content: center;
   align-items: center;
+
+  &--icon {
+    &::before {
+      width: 33px;
+      height: 38px;
+      margin-right: 57px;
+
+      content: url("http://placehold.it/33x38");
+    }
+  }
 
   &:hover,
   &:focus {
@@ -16,19 +22,5 @@
 
   &:active {
     opacity: 0.6;
-  }
-
-  &--header {
-    width: 191px;
-    height: 38px;
-
-    justify-content: space-between;
-
-    &::before {
-      width: 33px;
-      height: 38px;
-
-      content: url("http://placehold.it/33x38");
-    }
   }
 }

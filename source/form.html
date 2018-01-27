@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>Cat Energy - Подбор программы</title>
+    <link rel="stylesheet" href="css/normalize-minified.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__top-bar">
-          <a class="main-nav__logo logo logo--header" href="index.html">
+          <a class="main-nav__logo logo logo--icon" href="index.html">
             <img class="logo__name" src="img/logo-mobile.svg" width="101" height="18" alt="Cat Energy">
           </a>
-          <button class="main-nav__toggle" type="button">
+          <button class="main-nav__toggle main-nav__toggle--active" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -33,95 +34,97 @@
     <main class="page-main">
       <h1 class="page-main__title">Подбор программы</h1>
       <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <div class="form__wrapper">
+          <p class="form__text">Заполните анкету и мы подберем программу&nbsp;питания для вашего кота</p>
+        </div>
 
         <fieldset class="form__field-group">
           <legend class="visually-hidden">Основная информация</legend>
-          <p class="form__item">
-            <label>
-              Имя:<sup>*</sup>
-              <input class="form__field" type="text" name="name" placeholder="Барсик">
-            </label>
-          </p>
-          <p class="form__item">
-            <label>
-              Вес (кг):<sup>*</sup>
-              <input class="form__field" type="text" name="weight" placeholder="7">
-            </label>
-          </p>
-          <p class="form__item">
-            <label>
-              Возраст (лет):<sup>*</sup>
-              <input class="form__field" type="text" name="age" placeholder="7">
-            </label>
-          </p>
+          <div class="form__wrapper">
+            <p class="form__item">
+              <label class="form__label" for="cat-name">Имя:*</label>
+              <input class="form__field" id="cat-name" type="text" name="name" placeholder="Барсик">
+            </p>
+            <p class="form__item">
+              <label class="form__label"  for="cat-weight">Вес (кг):*</label>
+              <input class="form__field" id="cat-weight" type="text" name="weight" placeholder="7">
+            </p>
+            <p class="form__item">
+              <label class="form__label" for="cat-age">Возраст (лет):*</label>
+              <input class="form__field" id="cat-age" type="text" name="age" placeholder="7">
+            </p>
+          </div>
         </fieldset>
 
-        <fieldset class="form__field-group">
+        <fieldset class="form__field-group form__field-group--aims">
           <legend class="visually-hidden">Цель</legend>
           <ul class="form__aims">
             <li class="form__aim">
-              <input id="lose-weight" type="radio" name="aim" checked>
-              <label for="lose-weight">Похудение</label>
+              <input class="form__radio visually-hidden" id="lose-weight" type="radio" name="aim" checked>
+              <label class="form__label" for="lose-weight">Похудение</label>
             </li>
             <li class="form__aim">
-              <input id="gain-weight" type="radio" name="aim">
-              <label for="gain-weight">Набор массы</label>
+              <input class="form__radio visually-hidden" id="gain-weight" type="radio" name="aim">
+              <label class="form__label" for="gain-weight">Набор массы</label>
             </li>
             <li class="form__aim">
-              <input id="need-advice" type="radio" name="aim">
-              <label for="need-advice">Не знаю (нужен ваш совет)</label>
+              <input class="form__radio visually-hidden" id="need-advice" type="radio" name="aim">
+              <label class="form__label" for="need-advice">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="form__field-group">
           <legend class="form__title">Контактные данные (владельца кота)</legend>
-          <p class="form__item">
-            <label>
-              E-mail:<sup>*</sup>
+          <div class="form__wrapper">
+            <p class="form__item">
+              <label class="form__label">E-mail:*</label>
               <input class="form__field form__field--email" type="email" placeholder="kuklachev@gmail.com">
-            </label>
-          </p>
-          <p class="form__item">
-            <label>
-              Телефон:<sup>*</sup>
+            </p>
+            <p class="form__item">
+              <label class="form__label">Телефон:*</label>
               <input class="form__field form__field--phone" type="tel" placeholder="8 (960) 900-60-90">
-            </label>
-          </p>
+            </p>
+          </div>
         </fieldset>
 
         <fieldset class="form__field-group">
           <legend class="form__title">Комментарий</legend>
-          <p class="form__item">
-            <textarea class="form__field form__field--comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </p>
+          <div class="form__wrapper">
+            <p class="form__item">
+              <textarea class="form__field form__field--comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </p>
+          </div>
         </fieldset>
 
         <fieldset class="form__field-group">
           <legend class="form__title">Дополнительно</legend>
-          <ul class="form__additional-products">
-            <li class="form__additional-product">
-              <input id="sweetener" type="checkbox" name="sweetener" checked>
-              <label for="sweetener">Сахарозаменитель</label>
-            </li>
-            <li class="form__additional-product">
-              <input id="water" type="checkbox" name="water">
-              <label for="water">Питьевая вода</label>
-            </li>
-            <li class="form__additional-product">
-              <input id="milk" type="checkbox" name="milk">
-              <label for="milk">Молоко</label>
-            </li>
-            <li class="form__additional-product">
-              <input id="vitamins" type="checkbox" name="vitamins">
-              <label for="vitamins">Витамины</label>
-            </li>
-          </ul>
+          <div class="form__wrapper">
+            <ul class="form__additional-products">
+              <li class="form__additional-product">
+                <input class="form__checkbox visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
+                <label class="form__label" for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="form__additional-product">
+                <input class="form__checkbox visually-hidden" id="water" type="checkbox" name="water">
+                <label class="form__label" for="water">Питьевая вода</label>
+              </li>
+              <li class="form__additional-product">
+                <input class="form__checkbox visually-hidden" id="milk" type="checkbox" name="milk">
+                <label class="form__label" for="milk">Молоко</label>
+              </li>
+              <li class="form__additional-product">
+                <input class="form__checkbox visually-hidden" id="vitamins" type="checkbox" name="vitamins">
+                <label class="form__label" for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
 
-        <button class="form__send button" type="submit">Отправить заявку</button>
-        <p class="form__warning"><sup>*</sup> — Обязательные поля</p>
+        <div class="form__wrapper">
+          <button class="form__send button" type="submit">Отправить заявку</button>
+          <p class="form__warning">* — Обязательные поля</p>
+        </div>
       </form>
     </main>
 

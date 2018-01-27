@@ -1,0 +1,42 @@
+.additional-product {
+  padding-top: 14px;
+  padding-bottom: 17px;
+
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.additional-product__title {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.additional-product__title-link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #222;
+}
+
+.additional-product__description {
+  display: flex;
+
+  margin-bottom: 17px;
+
+  justify-content: space-between;
+}
+
+.additional-product__quantity,
+.additional-product__price {
+  margin: 0;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+
+  color: #444;
+}
