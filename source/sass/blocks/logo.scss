@@ -1,0 +1,26 @@
+.logo {
+  display: flex;
+
+  outline: none;
+
+  align-items: center;
+
+  &--icon {
+    &::before {
+      width: 33px;
+      height: 38px;
+      margin-right: 57px;
+
+      content: url("http://placehold.it/33x38");
+    }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

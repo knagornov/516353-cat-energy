@@ -1,0 +1,35 @@
+.slider {
+  position: relative;
+
+  padding-top: 273px;
+  padding-bottom: 15px;
+
+  text-align: center;
+}
+
+.slider__item {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -20px;
+}
+
+.slider__label {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+
+  cursor: pointer;
+  text-transform: uppercase;
+
+  color: #111111;
+}
+
+.slider__input-before:checked ~ .slider__item--before {
+  z-index: 0;
+}
+
+.slider__input-after:checked ~ .slider__item--after {
+  z-index: 0;
+}

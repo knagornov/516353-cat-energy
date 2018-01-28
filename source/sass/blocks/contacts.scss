@@ -1,0 +1,40 @@
+.contacts {
+  &--main-page {
+    background-color: #ffffff;
+  }
+}
+
+.contacts__wrapper {
+  display: flex;
+
+  width: 280px;
+  min-height: 114px;
+  margin-right: auto;
+  margin-left: auto;
+
+  align-items: center;
+}
+
+.contacts__cooperation {
+  width: 140px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+
+  text-transform: uppercase;
+
+  color: #111111;
+}
+
+.contacts__address {
+  width: 140px;
+  margin: 0;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #444444;
+}
