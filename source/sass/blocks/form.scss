@@ -15,7 +15,7 @@
 
   text-transform: uppercase;
 
-  color: #111;
+  color: #111111;
 }
 
 .form__field-group {
@@ -50,7 +50,7 @@
 
   text-transform: uppercase;
 
-  color: #222;
+  color: #222222;
 
   flex-shrink: 0;
 }
@@ -80,19 +80,19 @@
   }
 
   &::-webkit-input-placeholder {
-    color: #444;
+    color: #444444;
   }
 
   &::-moz-placeholder {
-    color: #444;
+    color: #444444;
   }
 
   &:-moz-placeholder {
-    color: #444;
+    color: #444444;
   }
 
   &:-ms-input-placeholder {
-    color: #444;
+    color: #444444;
   }
 
   &:hover {
@@ -105,7 +105,7 @@
   &:focus {
     padding: 9px 12px;
 
-    border: 2px solid #444;
+    border: 2px solid #444444;
   }
 }
 
@@ -142,7 +142,7 @@
   font-weight: 400;
   line-height: 24px;
 
-  color: #111;
+  color: #111111;
 }
 
 .form__additional-products {
@@ -170,5 +170,5 @@
 
   text-align: center;
 
-  color: #444;
+  color: #444444;
 }
