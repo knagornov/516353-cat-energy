@@ -1,3 +1,21 @@
+.additionally {
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .additionally {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally {
+    width: 1440px;
+  }
+}
+
 .additionally__title {
   display: flex;
 
@@ -24,10 +42,39 @@
   border-top: 1px solid #cdcdcd;
 }
 
+@media (min-width: $desktop-width) {
+  .additionally__list {
+    width: 895px;
+  }
+}
+
 .additionally__wrapper {
-  width: 280px;
+  box-sizing: border-box;
+  width: 320px;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .additionally__wrapper {
+    width: 768px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally__wrapper {
+    display: flex;
+
+    width: 1440px;
+    padding-right: 110px;
+    padding-left: 110px;
+
+    justify-content: space-between;
+  }
 }
 
 .additionally__order-all {
@@ -48,7 +95,22 @@
   text-decoration: none;
 
   color: #ffffff;
-  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; //временно
 
   align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .additionally__order-all {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally__order-all {
+    width: 245px;
+    margin: 0;
+  }
 }

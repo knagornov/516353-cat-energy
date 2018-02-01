@@ -1,10 +1,7 @@
 .contacts {
-  &--main-page {
-    background-color: #ffffff;
-  }
-}
+  box-sizing: border-box;
+  position: relative;
 
-.contacts__wrapper {
   display: flex;
 
   width: 280px;
@@ -12,7 +9,28 @@
   margin-right: auto;
   margin-left: auto;
 
+  justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 768px;
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+
+    width: 570px;
+
+    background-color: #ffffff;
+  }
 }
 
 .contacts__cooperation {

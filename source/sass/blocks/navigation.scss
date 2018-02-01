@@ -3,8 +3,6 @@
   padding: 0;
 
   list-style: none;
-
-  background-color: #ffffff;
 }
 
 .navigation__item {
@@ -12,12 +10,22 @@
 
   box-sizing: border-box;
   min-height: 66px;
-  padding: 15px 35px;
+  padding: 20px;
 
   border-bottom: #e6e6e6 solid 1px;
 
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__item {
+    min-height: auto;
+    margin-left: 36px;
+    padding: 0;
+
+    border-bottom: none;
+  }
 }
 
 .navigation__link {
@@ -47,8 +55,10 @@
   &--active {
     cursor: default;
   }
+}
 
-  &--active::after {
+@media (min-width: $tablet-width) {
+  .navigation__link--active::after {
     position: absolute;
     bottom: -12px;
     left: 0;

@@ -1,17 +1,23 @@
 .slider {
-  position: relative;
-
-  padding-top: 273px;
   padding-bottom: 15px;
 
   text-align: center;
 }
 
 .slider__item {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: -20px;
+  position: relative;
+  width: 320px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slider__image {
+  &--after {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .slider__label {

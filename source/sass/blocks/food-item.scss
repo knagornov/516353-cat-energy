@@ -4,14 +4,41 @@
   border-bottom: 1px solid #ededed;
 }
 
+@media (min-width: $tablet-width) {
+  .food-item {
+    width: 324px;
+    min-height: 570px;
+    background-color: #f2f2f2; //временно
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-item {
+    width: 245px;
+    min-height: 570px;
+    background-color: #f2f2f2; //временно
+  }
+}
+
 .food-item__wrapper {
+  box-sizing: border-box;
   display: flex;
 
-  width: 280px;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-right: auto;
   margin-left: auto;
 
   flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .food-item__wrapper {
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .food-item__title {
@@ -43,9 +70,14 @@
   justify-content: center;
 }
 
-.food-item__description {
-  width: 140px;
+@media (min-width: $tablet-width) {
+  .food-item__description-wrapper {
+    width: 100%;
+  }
+}
 
+.food-item__description {
+  width: 100%;
   border-collapse: collapse;
 }
 

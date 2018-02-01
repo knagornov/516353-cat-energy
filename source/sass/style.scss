@@ -1,11 +1,12 @@
 //base
+@import "base/variables.scss";
 @import "base/fonts.scss";
 @import "base/global.scss";
-@import "blocks/visually-hidden.scss";
+@import "base/visually-hidden.scss";
 
 //header
+@import "blocks/page-header.scss";
 @import "blocks/button.scss";
-@import "blocks/main-nav.scss";
 @import "blocks/logo.scss";
 @import "blocks/navigation.scss";
 
