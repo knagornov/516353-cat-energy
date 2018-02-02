@@ -5,6 +5,14 @@
   border-bottom: 1px solid #cdcdcd;
 }
 
+@media (min-width: $desktop-width) {
+  .additional-product {
+    display: flex;
+
+    justify-content: space-between;
+  }
+}
+
 .additional-product__title {
   margin: 0;
   margin-bottom: 10px;
@@ -39,4 +47,10 @@
   line-height: 14px;
 
   color: #444444;
+}
+
+@media (min-width: $desktop-width) {
+  .additional-product__order {
+    width: 245px;
+  }
 }

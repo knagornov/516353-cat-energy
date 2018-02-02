@@ -1,12 +1,15 @@
 .page-main__title {
   display: flex;
 
-  width: 280px;
+  box-sizing: border-box;
+  width: 320px;
   min-height: 90px;
   margin: 0;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 20px;
   padding-bottom: 10px;
+  padding-left: 20px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
@@ -16,4 +19,20 @@
   color: #111111;
 
   align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    width: 768px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    width: 1440px;
+    padding-right: 110px;
+    padding-left: 110px;
+  }
 }

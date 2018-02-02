@@ -1,11 +1,15 @@
 //base
+@import "base/variables.scss";
 @import "base/fonts.scss";
 @import "base/global.scss";
-@import "blocks/visually-hidden.scss";
+@import "base/visually-hidden.scss";
+
+//common
+@import "blocks/button.scss";
+@import "blocks/decorated-title.scss";
 
 //header
-@import "blocks/button.scss";
-@import "blocks/main-nav.scss";
+@import "blocks/page-header.scss";
 @import "blocks/logo.scss";
 @import "blocks/navigation.scss";
 
@@ -28,12 +32,10 @@
 @import "blocks/additionally.scss";
 @import "blocks/additional-product.scss";
 
-
 //form.hhtml content
 @import "blocks/form.scss";
 
 //footer
 @import "blocks/page-footer.scss";
-@import "blocks/map.scss";
 @import "blocks/contacts.scss";
 @import "blocks/social.scss";

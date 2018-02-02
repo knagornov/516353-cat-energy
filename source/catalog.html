@@ -2,22 +2,23 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cat Energy - Каталог продукции</title>
     <link rel="stylesheet" href="css/normalize-minified.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__top-bar">
-          <a class="main-nav__logo logo logo--icon" href="index.html">
-            <img class="logo__name" src="img/logo-mobile.svg" width="101" height="18" alt="Cat Energy">
-          </a>
-          <button class="main-nav__toggle main-nav__toggle--active" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </div>
-        <ul class="main-nav__list navigation">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo logo logo--icon" href="index.html">
+          <img class="logo__name" src="img/logo-mobile.svg" width="101" height="18" alt="Cat Energy">
+        </a>
+        <button class="page-header__nav-toggle page-header__nav-toggle--active" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <nav class="page-header__main-nav">
+        <ul class="page-header__list navigation">
           <li class="navigation__item">
             <a class="navigation__link" href="index.html">Главная</a>
           </li>
@@ -218,18 +219,22 @@
               <a class="food-item__order button" href="#">Заказать</a>
             </div>
           </li>
-        </ul>
 
-        <div class="catalog__show-more-container">
-          <a class="catalog__show-more" href="#">Показать еще 100500 товаров</a>
-          <p class="catalog__tastes-info">На самом деле вкусов гораздо больше!</p>
-          <a class="catalog__all button button--all" href="#">Показать все</a>
-        </div>
+          <li class="catalog__item food-item">
+            <div class="food-item__wrapper">
+              <a class="catalog__show-more" href="#">Показать еще 100500 товаров</a>
+              <p class="catalog__tastes-info">На самом деле вкусов гораздо больше!</p>
+              <a class="catalog__all button button--all" href="#">Показать все</a>
+            </div>
+          </li>
+        </ul>
       </section>
 
       <section class="additionally">
+        <h2 class="additionally__title decorated-title">
+          <span class="decorated-title__text">Дополнительные товары</span>
+        </h2>
         <div class="additionally__wrapper">
-          <h2 class="additionally__title">Дополнительные товары</h2>
           <ul class="additionally__list">
             <li class="additionally__item additional-product">
               <h3 class="additional-product__title"><a class="additional-product__title-link" href="#">Сахарозаменитель</a></h3>
@@ -273,36 +278,40 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__contacts contacts">
-        <div class="contacts__wrapper">
+      <div class="page-footer__contacts">
+        <div class="contacts">
           <b class="contacts__cooperation">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
+        <div class="page-footer__map">
+          <a class="page-footer__map-link" href="#">
+            <img class="page-footer__map-image" src="img/map.jpg" width="320" height="362" alt="Расположение на карте: Большая Конюшенная, 19/8, Санкт-Петербург">
+          </a>
+        </div>
       </div>
-      <a class="page-footer__map map" href="#">
-        <img class="map__image" src="img/map.jpg" width="320" height="362" alt="Расположение на карте: Большая Конюшенная, 19/8, Санкт-Петербург">
-      </a>
-      <div class="page-footer__logo-wrapper">
-        <a class="page-footer__logo logo" href="index.html">
-          <img class="logo__name" src="img/logo-mobile.svg" width="128" height="24" alt="Cat Energy">
-        </a>
-      </div>
-      <ul class="page-footer__social social">
-        <li class="social__item social-button">
-          <a class="social-button__link social-button__link--vkontakte" href="#">Мы в Вконтакте</a>
-        </li>
-        <li class="social__item social-button">
-          <a class="social-button__link social-button__link--instagram" href="#">Мы в Instagram</a>
-        </li>
-        <li class="social__item social-button">
-          <a class="social-button__link social-button__link--facebook" href="#">Мы в Facebook</a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright-wrapper">
-        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
-          HTML Academy
-          <!-- Тут будет SVG -->
-        </a>
+      <div class="page-footer__bottom-wrapper">
+        <div class="page-footer__logo-wrapper">
+          <a class="page-footer__logo logo" href="index.html">
+            <img class="logo__name" src="img/logo-mobile.svg" width="128" height="24" alt="Cat Energy">
+          </a>
+        </div>
+        <ul class="page-footer__social social">
+          <li class="social__item social-button">
+            <a class="social-button__link social-button__link--vkontakte" href="#">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item social-button">
+            <a class="social-button__link social-button__link--instagram" href="#">Мы в Instagram</a>
+          </li>
+          <li class="social__item social-button">
+            <a class="social-button__link social-button__link--facebook" href="#">Мы в Facebook</a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright-wrapper">
+          <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+            <!-- Тут будет SVG -->
+          </a>
+        </div>
       </div>
     </footer>
   </body>

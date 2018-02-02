@@ -1,7 +1,41 @@
 .form__wrapper {
-  width: 280px;
+  box-sizing: border-box;
+  width: 320px;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__wrapper {
+    width: 768px;
+    padding-right: 66px;
+    padding-left: 66px;
+
+    &--send {
+      display: flex;
+
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper {
+    width: 1440px;
+    padding-right: 110px;
+    padding-left: 110px;
+
+    &--basic,
+    &--contacts {
+      display: flex;
+
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 }
 
 .form__text {
@@ -30,16 +64,28 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form__basic-info,
+  .form__aims {
+    width: 570px;
+  }
+}
+
 .form__item {
   display: flex;
 
-  width: 280px;
   margin-top: 0;
-  margin-right: auto;
   margin-bottom: 14px;
-  margin-left: auto;
 
   align-items: center;
+}
+
+@media (min-width: $desktop-width) {
+  .form__item {
+    &--contacts {
+      width: 570px;
+    }
+  }
 }
 
 .form__label {
@@ -110,10 +156,7 @@
 }
 
 .form__aims {
-  width: 280px;
   margin: 0;
-  margin-right: auto;
-  margin-left: auto;
   padding: 0;
   padding-top: 25px;
 
@@ -129,22 +172,6 @@
   opacity: 0.3;
 }
 
-.form__title {
-  width: 280px;
-  margin-right: auto;
-  margin-bottom: 32px;
-  margin-left: auto;
-  padding: 0;
-  padding-top: 20px;
-
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
-
-  color: #111111;
-}
-
 .form__additional-products {
   margin: 0;
   padding: 0;
@@ -152,8 +179,23 @@
   list-style: none;
 }
 
+@media (min-width: $tablet-width) {
+  .form__additional-products {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .form__additional-product {
   margin-bottom: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__additional-product {
+    width: 285px;
+  }
 }
 
 .form__send {
@@ -161,6 +203,8 @@
 }
 
 .form__warning {
+  display: block;
+
   margin-top: 20px;
   margin-bottom: 30px;
 
@@ -171,4 +215,23 @@
   text-align: center;
 
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .form__send,
+  .form__warning {
+    width: 285px;
+    margin: 0;
+  }
+
+  .form__warning {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__send,
+  .form__warning {
+    width: 570px;
+  }
 }
