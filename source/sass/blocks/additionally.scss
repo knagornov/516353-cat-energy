@@ -1,37 +1,19 @@
-.additionally {
-  width: 320px;
-  margin-right: auto;
-  margin-left: auto;
-}
+// .additionally__title {
+//   display: flex;
 
-@media (min-width: $tablet-width) {
-  .additionally {
-    width: 768px;
-  }
-}
+//   min-height: 87px;
+//   margin: 0;
+//   padding: 0;
 
-@media (min-width: $desktop-width) {
-  .additionally {
-    width: 1440px;
-  }
-}
+//   font-family: "Oswald", "Arial", sans-serif;
+//   font-size: 24px;
+//   font-weight: 400;
+//   line-height: 24px;
 
-.additionally__title {
-  display: flex;
+//   color: #111111;
 
-  min-height: 87px;
-  margin: 0;
-  padding: 0;
-
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
-
-  color: #111111;
-
-  align-items: center;
-}
+//   align-items: center;
+// }
 
 .additionally__list {
   margin: 0;

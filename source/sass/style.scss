@@ -4,9 +4,12 @@
 @import "base/global.scss";
 @import "base/visually-hidden.scss";
 
+//common
+@import "blocks/button.scss";
+@import "blocks/decorated-title.scss";
+
 //header
 @import "blocks/page-header.scss";
-@import "blocks/button.scss";
 @import "blocks/logo.scss";
 @import "blocks/navigation.scss";
 
@@ -28,7 +31,6 @@
 @import "blocks/food-item.scss";
 @import "blocks/additionally.scss";
 @import "blocks/additional-product.scss";
-
 
 //form.hhtml content
 @import "blocks/form.scss";

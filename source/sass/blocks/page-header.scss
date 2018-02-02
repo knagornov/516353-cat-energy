@@ -1,10 +1,17 @@
 .page-header {
-  position: relative;
-
   box-sizing: border-box;
   width: 320px;
+  min-height: 50px; //временно
   margin-right: auto;
   margin-left: auto;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    &--main-page {
+      position: absolute;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -51,14 +58,6 @@
     padding: 0;
 
     border-bottom: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__logo-wrapper {
-    position: absolute;
-    top: 54px;
-    left: 110px;
   }
 }
 
@@ -121,14 +120,6 @@
 @media (min-width: $tablet-width) {
   .page-header__nav-toggle {
     display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__main-nav {
-    position: absolute;
-    top: 54px;
-    right: 110px;
   }
 }
 

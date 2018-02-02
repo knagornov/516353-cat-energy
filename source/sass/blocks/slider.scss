@@ -1,22 +1,29 @@
 .slider {
+  position: relative;
+
+  padding-top: 240px;
   padding-bottom: 15px;
 
   text-align: center;
 }
 
-.slider__item {
-  position: relative;
-  width: 320px;
-
-  margin-right: auto;
-  margin-left: auto;
+@media (min-width: $desktop-width) {
+  .slider {
+    width: 650px;
+  }
 }
 
 .slider__image {
-  &--after {
-    position: absolute;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__image {
     top: 0;
-    left: 0;
+    left: calc(50% - 160px); //временно
   }
 }
 
@@ -32,10 +39,10 @@
   color: #111111;
 }
 
-.slider__input-before:checked ~ .slider__item--before {
+.slider__input-before:checked ~ .slider__image--before {
   z-index: 0;
 }
 
-.slider__input-after:checked ~ .slider__item--after {
+.slider__input-after:checked ~ .slider__image--after {
   z-index: 0;
 }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--main-page">
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo logo logo--icon">
           <img class="logo__name" src="img/logo-mobile.svg" width="101" height="18" alt="Cat Energy">
@@ -98,15 +98,13 @@
             </div>
 
             <div class="example__slider slider">
-              <div class="slider__item">
-                <img class="slider__image slider__image--before" src="img/before-mobile@1x.png" width="320" height="240" alt="Фото толстого кота">
-                <img class="slider__image slider__image--after" src="img/after-mobile@1x.png" width="320" height="240" alt="Фото стройного кота">
-              </div>
-
-              <input class="slider__input-before visually-hidden" id="slider-before" type="radio" name="slider-toggle" checked>
+              <input class="slider__input-before" id="slider-before" type="radio" name="slider-toggle" checked>
               <label class="slider__label" for="slider-before">Было</label>
-              <input class="slider__input-after visually-hidden" id="slider-after" type="radio" name="slider-toggle">
+              <input class="slider__input-after" id="slider-after" type="radio" name="slider-toggle">
               <label class="slider__label" for="slider-after">Стало</label>
+
+              <img class="slider__image slider__image--before" src="img/before-mobile@1x.png" width="320" height="240" alt="Фото толстого кота">
+              <img class="slider__image slider__image--after" src="img/after-mobile@1x.png" width="320" height="240" alt="Фото стройного кота">
             </div>
           </div>
         </div>

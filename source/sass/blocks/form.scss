@@ -1,25 +1,8 @@
-.form {
-  width: 320px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-width: $tablet-width) {
-  .form {
-    width: 768px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form {
-    width: 1440px;
-    margin-top: 194px;
-  }
-}
-
 .form__wrapper {
   box-sizing: border-box;
   width: 320px;
+  margin-right: auto;
+  margin-left: auto;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -189,18 +172,7 @@
   opacity: 0.3;
 }
 
-.form__title {
-  margin-bottom: 32px;
-  padding: 0;
-  padding-top: 20px;
 
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
-
-  color: #111111;
-}
 
 .form__additional-products {
   margin: 0;
