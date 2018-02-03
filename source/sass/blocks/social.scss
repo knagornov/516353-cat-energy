@@ -1,6 +1,7 @@
 .social {
   display: flex;
 
+  width: 280px;
   min-height: 62px;
   margin: 0;
   padding: 0;
@@ -13,10 +14,42 @@
 
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 @media (min-width: $tablet-width) {
   .social {
     border: none;
+  }
+}
+
+.social__item {
+  margin-left: 33px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.social-button__link {
+  display: flex;
+
+  width: 22px;
+  height: 22px;
+
+  outline: none;
+
+  justify-content: center;
+  align-items: center;
+
+  &:hover svg,
+  &:focus svg {
+    fill: #68b738;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+
+    fill: #68b738;
   }
 }
