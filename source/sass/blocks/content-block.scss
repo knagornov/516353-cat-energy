@@ -31,8 +31,19 @@
 }
 
 @media (min-width: $desktop-width) {
-  .content-block--example {
-    background-image: linear-gradient(to bottom, #ffffff 20%, #f2f2f2 20%);
+  .content-block {
+    padding-top: 73px;
+
+    &--advantages {
+      border-bottom: none;
+    }
+
+    &--example {
+      padding-top: 63px;
+      padding-bottom: 70px;
+
+      background-image: linear-gradient(to bottom, #ffffff 199px, transparent 199px), linear-gradient(to right, #f2f2f2 72.55%, #eaeaea 72.55%);
+    }
   }
 }
 

@@ -22,11 +22,16 @@
   }
 }
 
+.logo--main-page {
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .logo {
-    // min-height: auto;
-    // padding: 0;
-
     &--header {
       width: 173px;
 

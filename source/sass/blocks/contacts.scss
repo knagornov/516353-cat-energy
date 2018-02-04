@@ -1,9 +1,10 @@
 .contacts {
+  box-sizing: border-box;
   position: relative;
 
   display: flex;
 
-  width: 280px;
+  width: 320px;
   min-height: 114px;
   margin-right: auto;
   margin-left: auto;
@@ -16,7 +17,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    width: 624px;
+    width: 768px;
     min-height: 201px;
     padding-right: 72px;
     padding-left: 72px;
@@ -25,7 +26,10 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
+    padding-right: 75px;
+    padding-left: 75px;
     position: absolute;
+    z-index: 1;
     top: 95px;
     left: 110px;
 
@@ -76,6 +80,14 @@
     line-height: 20px;
 
     text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__address {
+    width: 170px;
+
+    text-align: left;
   }
 }
 

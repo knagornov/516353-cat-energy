@@ -17,7 +17,9 @@
     display: flex;
     flex-direction: column;
 
-    width: 430px;
+    width: 431px;
+    padding-right: 40px;
+    margin-bottom: 0;
   }
 }
 
@@ -40,6 +42,13 @@
 
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__text {
+    margin-top: 147px;
+    margin-bottom: 68px;
   }
 }
 
@@ -77,6 +86,12 @@
 @media (min-width: $tablet-width) {
   .example__stats-wrapper {
     width: 366px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__stats-wrapper {
+    margin-bottom: 56px;
   }
 }
 
@@ -194,5 +209,13 @@
     line-height: 29px;
 
     text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__costs {
+    width: 328px;
+    display: flex;
+    justify-content: space-between;
   }
 }

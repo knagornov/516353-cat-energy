@@ -24,13 +24,14 @@
 @media (min-width: $desktop-width) {
   .page-header {
     width: 1440px;
-    padding-top: 0;
+    padding-top: 63px;
     padding-right: 110px;
     padding-bottom: 0;
     padding-left: 110px;
 
     &--main-page {
       position: absolute;
+      z-index: 1;
     }
   }
 }

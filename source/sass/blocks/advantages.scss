@@ -23,21 +23,55 @@
   }
 }
 
+.advantages__item {
+  margin-bottom: 26px;
+}
+
 @media (min-width: $tablet-width) {
-  .advantages__item::after {
-    position: absolute;
-    z-index: -1;
-    top: -39px;
-    left: 116px;
+  .advantages__item {
+    margin-bottom: 0;
 
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 281px;
-    font-weight: 400;
-    line-height: 281px;
+    &:nth-child(n + 3) {
+      margin-top: 31px;
+    }
 
-    content: counter(advantagesCounter);
-    counter-increment: advantagesCounter;
+    &:nth-child(odd) {
+      margin-right: auto;
+    }
 
-    color: #f2f2f2;
+    &::after {
+      position: absolute;
+      z-index: -1;
+      top: -39px;
+      left: 116px;
+
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      font-weight: 400;
+      line-height: 281px;
+
+      content: counter(advantagesCounter);
+      counter-increment: advantagesCounter;
+
+      color: #f2f2f2;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item {
+    margin-right: auto;
+
+    &:nth-child(n + 3) {
+      margin-top: 0;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(n + 5) {
+      margin-top: 31px; //на случай переноса
+    }
   }
 }

@@ -45,6 +45,19 @@
 @media (min-width: $desktop-width) {
   .slider {
     width: 650px;
+    margin-right: -40px;
+    padding-top: 443px;
+
+    &::before {
+      top: 451px;
+      left: 110px;
+
+      width: 428px;
+      height: 6px;
+
+      border: none;
+      background-color: #dcdcdc;
+    }
   }
 }
 
@@ -135,6 +148,14 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .slider__label {
+    &--before {
+      margin-right: 470px;
+    }
+  }
+}
+
 .slider__input-before:checked ~ .slider__image--before {
   z-index: 0;
 }
@@ -197,5 +218,19 @@
       border: 1px solid #68b738;
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider__handle {
+    top: 530px;
+    left: 337px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__handle {
+    top: 437px;
+    left: 308px;
   }
 }
