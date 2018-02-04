@@ -26,12 +26,16 @@
   .food-categories__item {
     min-height: 372px;
     margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .food-categories__item {
     width: 570px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 }

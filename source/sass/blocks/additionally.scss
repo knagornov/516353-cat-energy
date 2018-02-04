@@ -61,6 +61,11 @@
 
 .additionally__order-all {
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  padding-top: 65px;
 
   box-sizing: border-box;
   width: 280px;
@@ -73,15 +78,25 @@
   font-family: "Arial", sans-serif;
   font-size: 16px;
 
-  text-align: center;
   text-decoration: none;
 
   color: #ffffff;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover; //временно
 
-  align-items: center;
+  &::before {
+    margin-bottom: 64px;
+    content: "";
+    display: block;
+    width: 55px;
+    height: 60px;
+    background: url("../img/icon-gift.svg") no-repeat;
+  }
+}
+
+
+.additionally__order-all span {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {

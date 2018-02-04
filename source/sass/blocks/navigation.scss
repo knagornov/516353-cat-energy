@@ -39,7 +39,7 @@
 
   box-sizing: border-box;
   width: 320px;
-  height: 65px;
+  height: 66px;
   padding: 20px;
 
   font-family: "Oswald", "Arial", sans-serif;
@@ -87,6 +87,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 24.86px;
+    border-bottom: 2px solid transparent;
 
     &--active {
       border-bottom: 2px solid #68b738;

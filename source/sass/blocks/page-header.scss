@@ -1,16 +1,17 @@
-.page-header {
-  box-sizing: border-box;
-  width: 320px;
-  // min-height: 50px; //временно
-  margin-right: auto;
-  margin-left: auto;
+@media (max-width: $tablet-width) {
+  .page-header__top-bar {
+    border-bottom: #e6e6e6 solid 1px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
 
+    box-sizing: border-box;
     width: 768px;
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 28px;
     padding-right: 30px;
     padding-bottom: 28px;
@@ -40,17 +41,22 @@
   display: flex;
 
   box-sizing: border-box;
+  width: 320px;
   min-height: 66px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 13px 20px;
-
-  border-bottom: #e6e6e6 solid 1px;
+  padding-right: 20px;
+  padding-left: 20px;
 
   justify-content: space-between;
   align-items: center;
 }
 
+
 @media (min-width: $tablet-width) {
   .page-header__logo-wrapper {
+    width: auto;
     min-height: auto;
     padding: 0;
 
