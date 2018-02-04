@@ -6,7 +6,7 @@
 
   text-align: center;
 
-  &::after {
+  &::before {
     position: absolute;
     top: 276px;
     left: 96px;
@@ -21,6 +21,24 @@
     border: 1px solid #cdcdcd;
     border-radius: 6px;
     background-color: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    padding-top: 537px;
+    padding-bottom: 0;
+
+    &::before {
+      top: 544px;
+      left: 139px;
+
+      width: 428px;
+      height: 6px;
+
+      border: none;
+      background-color: #dcdcdc;
+    }
   }
 }
 
@@ -63,9 +81,8 @@
     margin-right: 116px;
   }
 
-  &--before::after,
+  &--before::before,
   &--after::before {
-    opacity: 0;
     position: absolute;
     z-index: 1;
 
@@ -76,11 +93,12 @@
 
     content: "";
 
+    opacity: 0;
     border-radius: 3px;
     background-color: #68b738;
   }
 
-  &--before::after {
+  &--before::before {
     top: 9px;
     left: 62px;
   }
@@ -91,11 +109,37 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .slider__label {
+    font-size: 20px;
+
+    border-bottom: 1px dotted #bebebe;
+
+    &--before {
+      margin-right: 465px;
+    }
+
+    &--before::before,
+    &--after::before {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid #bebebe;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
+}
+
 .slider__input-before:checked ~ .slider__image--before {
   z-index: 0;
 }
 
-.slider__input-before:checked ~ .slider__label--before::after {
+.slider__input-before:checked ~ .slider__label--before::before {
   opacity: 1;
 }
 
@@ -105,4 +149,53 @@
 
 .slider__input-after:checked ~ .slider__label--after::before {
   opacity: 1;
+}
+
+.slider__handle {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__handle {
+    position: absolute;
+    top: 530px;
+    left: 337px;
+
+    display: flex;
+
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+
+    cursor: pointer;
+
+    border: 1px solid #cecece;
+    border-radius: 50%;
+    outline: none;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    justify-content: center;
+
+    &::before {
+      width: 8px;
+      height: 8px;
+
+      content: "";
+
+      border-radius: 50%;
+      background-color: #68b738;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 1px solid #68b738;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
 }

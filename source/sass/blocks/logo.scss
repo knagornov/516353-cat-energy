@@ -1,5 +1,16 @@
 .logo {
+  display: flex;
+
   outline: none;
+
+  justify-content: center;
+  align-items: center;
+
+  &--header {
+    width: 191px;
+
+    justify-content: space-between;
+  }
 
   &:hover,
   &:focus {
@@ -11,8 +22,21 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .logo {
+    // min-height: auto;
+    // padding: 0;
+
+    &--header {
+      width: 173px;
+
+      border-bottom: none;
+    }
+  }
+}
+
 .logo__image {
   display: inline-block;
 
-  vertical-align: middle;
+  vertical-align: top;
 }

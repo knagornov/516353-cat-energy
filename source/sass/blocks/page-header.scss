@@ -1,17 +1,9 @@
 .page-header {
   box-sizing: border-box;
   width: 320px;
-  min-height: 50px; //временно
+  // min-height: 50px; //временно
   margin-right: auto;
   margin-left: auto;
-}
-
-@media (min-width: $desktop-width) {
-  .page-header {
-    &--main-page {
-      position: absolute;
-    }
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -19,9 +11,9 @@
     display: flex;
 
     width: 768px;
-    padding-top: 24px;
+    padding-top: 28px;
     padding-right: 30px;
-    padding-bottom: 24px;
+    padding-bottom: 28px;
     padding-left: 30px;
 
     align-items: center;
@@ -36,6 +28,10 @@
     padding-right: 110px;
     padding-bottom: 0;
     padding-left: 110px;
+
+    &--main-page {
+      position: absolute;
+    }
   }
 }
 

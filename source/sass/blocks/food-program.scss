@@ -15,9 +15,11 @@
 
 @media (min-width: $tablet-width) {
   .food-program {
+    position: relative;
+
     width: 768px;
-    min-height: 844px;
-    padding-top: 38px;
+    min-height: 846px;
+    padding-top: 36px;
     padding-right: 30px;
     padding-bottom: 0;
     padding-left: 120px;
@@ -52,6 +54,11 @@
 
 @media (min-width: $tablet-width) {
   .food-program__title {
+    margin-bottom: 42px;
+
+    font-size: 60px;
+    line-height: 60px;
+
     color: #111111;
   }
 }
@@ -74,7 +81,21 @@
 
 @media (min-width: $tablet-width) {
   .food-program__slogan {
+    margin-bottom: 43px;
+
+    font-size: 20px;
+    line-height: 20px;
+
     color: #111111;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .food-program__image-wrapper {
+    position: absolute;
+    z-index: -1;
+    top: 20%; //временно
+    left: 40%;
   }
 }
 
@@ -93,5 +114,8 @@
   .food-program__choice {
     width: 245px;
     min-height: 52px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }

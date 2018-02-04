@@ -1,4 +1,5 @@
 .advantage {
+  box-sizing: border-box;
   position: relative;
 
   margin-bottom: 26px;
@@ -40,8 +41,30 @@
 
 @media (min-width: $tablet-width) {
   .advantage {
+    padding: 0;
+    padding-top: 112px;
+    padding-right: 100px;
     width: 324px;
-    min-height: 230px;
+    min-height: 286px;
+    margin-bottom: 0;
+
+    &--quick {
+      padding-right: 70px;
+    }
+
+    &:nth-child(n + 3) {
+      margin-top: 31px;
+    }
+
+    &:nth-child(odd) {
+      margin-right: auto;
+    }
+
+    &::before {
+      top: 0;
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
@@ -60,4 +83,11 @@
   line-height: 18px;
 
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .advantage__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

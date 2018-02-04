@@ -13,8 +13,20 @@
 }
 
 @media (min-width: $tablet-width) {
-  .content-block--example {
-    background-image: linear-gradient(to bottom, #ffffff 60%, #f2f2f2 60%);
+  .content-block {
+    padding-top: 44px;
+
+    &--advantages {
+      padding-bottom: 0;
+
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    &--example {
+      padding-bottom: 71px;
+
+      background-image: linear-gradient(to bottom, #ffffff 619px, transparent 619px), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    }
   }
 }
 
@@ -58,4 +70,11 @@
   line-height: 60px;
 
   color: #111111;
+}
+
+@media (min-width: $tablet-width) {
+  .content-block__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
