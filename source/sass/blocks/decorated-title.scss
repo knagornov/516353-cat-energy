@@ -1,7 +1,6 @@
 .decorated-title {
   position: relative;
 
-
   display: block;
 
   box-sizing: border-box;
@@ -34,24 +33,35 @@
 
 @media (min-width: $tablet-width) {
   .decorated-title {
-    width: 768px;
-    padding-right: 30px;
-    padding-left: 30px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 60px;
+    margin-bottom: 81px;
+
+    &::after {
+      top: 29px;
+    }
   }
 }
 
-@media (min-width: $desktop-width) {
-  .decorated-title {
-    width: 1440px;
-    padding-right: 70px;
-    padding-left: 70px;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   .decorated-title {
+//     width: 1440px;
+//     padding-right: 70px;
+//     padding-left: 70px;
+//   }
+// }
 
 .decorated-title__wrapper {
   width: 320px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .decorated-title__wrapper {
+    width: 708px;
+  }
 }
 
 .decorated-title__text {
@@ -76,7 +86,7 @@
 
 @media (min-width: $tablet-width) {
   .decorated-title__text {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 38px;
+    padding-left: 38px;
   }
 }

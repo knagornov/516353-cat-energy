@@ -1,14 +1,12 @@
 .page-main__title {
-  display: flex;
-
   box-sizing: border-box;
   width: 320px;
-  min-height: 103px;
   margin: 0;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 15px;
   padding-right: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 28px;
   padding-left: 20px;
 
   font-family: "Oswald", "Arial", sans-serif;
@@ -17,15 +15,17 @@
   line-height: 60px;
 
   color: #111111;
-
-  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__title {
     width: 768px;
+    padding-top: 35px;
     padding-right: 30px;
+    padding-bottom: 25px;
     padding-left: 30px;
+
+    font-size: 60px;
   }
 }
 

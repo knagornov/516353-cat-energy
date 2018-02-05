@@ -1,19 +1,12 @@
-// .additionally__title {
-//   display: flex;
+.additionally {
+  margin-bottom: 35px;
+}
 
-//   min-height: 87px;
-//   margin: 0;
-//   padding: 0;
-
-//   font-family: "Oswald", "Arial", sans-serif;
-//   font-size: 24px;
-//   font-weight: 400;
-//   line-height: 24px;
-
-//   color: #111111;
-
-//   align-items: center;
-// }
+@media (min-width: $tablet-width) {
+  .additionally {
+    margin-bottom: 78px;
+  }
+}
 
 .additionally__list {
   margin: 0;
@@ -22,6 +15,14 @@
   list-style: none;
 
   border-top: 1px solid #cdcdcd;
+}
+
+@media (min-width: $tablet-width) {
+  .additionally__list {
+    box-sizing: border-box;
+
+    border: 1px solid #e6e6e6;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -60,48 +61,67 @@
 }
 
 .additionally__order-all {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
+  position: relative;
 
-  padding-top: 65px;
+  display: flex;
+  flex-direction: column;
 
   box-sizing: border-box;
   width: 280px;
-  height: 289px;
+  min-height: 289px;
   margin-top: 39px;
-  margin-bottom: 35px;
+  padding-top: 189px;
   padding-right: 55px;
   padding-left: 55px;
 
   font-family: "Arial", sans-serif;
   font-size: 16px;
 
+  text-align: center;
   text-decoration: none;
 
   color: #ffffff;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
 
+  align-items: center;
+
   &::before {
-    margin-bottom: 64px;
-    content: "";
+    position: absolute;
+    top: 66px;
+    left: 113px;
+
     display: block;
+
     width: 55px;
     height: 60px;
+
+    content: "";
+
     background: url("../img/icon-gift.svg") no-repeat;
   }
 }
 
-
-.additionally__order-all span {
-  display: block;
-}
-
 @media (min-width: $tablet-width) {
   .additionally__order-all {
+    flex-direction: row;
+
+    width: auto;
     width: 100%;
+    min-height: 200px;
+    margin-top: 69px;
+    padding-top: 0;
+    padding-right: 100px;
+    padding-left: 423px;
+
+    text-align: left;
+
+    background-size: cover; // временно
+
+    &::before {
+      top: 65px;
+      left: 91px;
+    }
   }
 }
 
