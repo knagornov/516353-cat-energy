@@ -100,8 +100,8 @@
 
     &::before {
       top: 47px;
-      left: 52px;
       right: auto;
+      left: 52px;
 
       width: 100px;
       height: 100px;
@@ -109,8 +109,8 @@
 
     &--slim::after {
       top: 41px;
-      left: 66px;
       right: auto;
+      left: 66px;
 
       width: 70px;
       height: 97px;
@@ -118,8 +118,8 @@
 
     &--pro::after {
       top: 69px;
-      left: 34px;
       right: auto;
+      left: 34px;
 
       width: 134px;
       height: 56px;
@@ -198,6 +198,8 @@
 .food-category__link {
   position: relative;
 
+  padding-right: 46px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -211,7 +213,7 @@
   &::after {
     position: absolute;
     top: 6px;
-    right: -46px;
+    right: 0;
 
     width: 33px;
     height: 12px;
@@ -235,12 +237,14 @@
 
 @media (min-width: $tablet-width) {
   .food-category__link {
+    padding-right: 56px;
+
     font-size: 20px;
     line-height: 20px;
 
     &::after {
       top: 10px;
-      right: -56px;
+      right: 0;
     }
   }
 }

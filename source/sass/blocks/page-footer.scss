@@ -123,6 +123,12 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer__copyright-wrapper {
+    padding-top: 10px;
+  }
+}
+
 .page-footer__copyright {
   display: flex;
 

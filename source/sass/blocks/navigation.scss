@@ -99,9 +99,11 @@
   .navigation__link {
     font-size: 20px;
 
-    color: #ffffff;
+    &--main-page {
+      color: #ffffff;
+    }
 
-    &--active {
+    &--main-page-active {
       border-bottom: 2px solid #ffffff;
     }
   }

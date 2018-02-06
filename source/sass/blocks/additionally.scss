@@ -8,6 +8,12 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .additionally {
+    margin-bottom: 86px;
+  }
+}
+
 .additionally__list {
   margin: 0;
   padding: 0;
@@ -28,6 +34,7 @@
 @media (min-width: $desktop-width) {
   .additionally__list {
     width: 895px;
+    border: none;
   }
 }
 
@@ -68,7 +75,7 @@
 
   box-sizing: border-box;
   width: 280px;
-  min-height: 289px;
+  height: 289px;
   margin-top: 39px;
   padding-top: 189px;
   padding-right: 55px;
@@ -106,9 +113,8 @@
   .additionally__order-all {
     flex-direction: row;
 
-    width: auto;
-    width: 100%;
-    min-height: 200px;
+    width: 708px;
+    height: 200px;
     margin-top: 69px;
     padding-top: 0;
     padding-right: 100px;
@@ -129,5 +135,14 @@
   .additionally__order-all {
     width: 245px;
     margin: 0;
+    padding-top: 140px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 289px;
+    text-align: center;
+
+    &::before {
+      left: 96px;
+    }
   }
 }

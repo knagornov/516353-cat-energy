@@ -14,17 +14,18 @@
     min-height: 571px;
     padding: 40px 38px;
 
+    border-bottom: none;
     background-image: linear-gradient(to bottom, #ffffff 140px, #f2f2f2 140px);
 
     justify-content: flex-end;
-    border-bottom: none;
 
     &:last-child {
-      margin-top: 140px;
       min-height: 431px;
-      background-image: none;
-      background-color: #ffffff;
+      margin-top: 140px;
+
       border: 1px solid #e6e6e6;
+      background-color: #ffffff;
+      background-image: none;
     }
   }
 }
@@ -73,9 +74,9 @@
 @media (min-width: $tablet-width) {
   .food-item__title {
     max-width: 170px;
+    margin-top: 100px; //временно
     margin-right: 0;
     margin-bottom: 15px;
-    margin-top: 100px; //временно
     padding: 0;
 
     text-align: center;
@@ -114,8 +115,9 @@
 @media (min-width: $tablet-width) {
   .food-item__description-wrapper {
     width: 100%;
-    align-items: center;
     margin-bottom: 32px;
+
+    align-items: center;
   }
 }
 
@@ -194,20 +196,19 @@
     content: "";
 
     background-image: linear-gradient(to bottom, transparent calc(50% - 1px), #d3d3d3 calc(50% - 1px), #d3d3d3 calc(50% + 1px), transparent calc(50% + 1px)), linear-gradient(to right, transparent calc(50% - 1px), #d3d3d3 calc(50% - 1px), #d3d3d3 calc(50% + 1px), transparent calc(50% + 1px));
-
-    // opacity: 0.3;
-    // background: url("../img/icon-plus-mobile.svg") no-repeat;
   }
 }
 
 @media (min-width: $tablet-width) {
   .food__show-more {
     font-size: 20px;
+
     &::before {
       width: 60px;
       height: 60px;
       margin-top: 0;
       margin-bottom: 50px;
+
       background-image: linear-gradient(to bottom, transparent calc(50% - 1px), #e6e6e6 calc(50% - 1px), #e6e6e6 calc(50% + 1px), transparent calc(50% + 1px)), linear-gradient(to right, transparent calc(50% - 1px), #e6e6e6 calc(50% - 1px), #e6e6e6 calc(50% + 1px), transparent calc(50% + 1px));
     }
   }
@@ -231,8 +232,10 @@
 
 @media (min-width: $tablet-width) {
   .food__tastes-info {
-    font-size: 16px;
     margin-top: 27px;
-    margin-bottom: 86px;
+    margin-bottom: 80px;
+
+    font-size: 16px;
+    line-height: normal;
   }
 }
