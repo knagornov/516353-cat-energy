@@ -56,10 +56,6 @@
   justify-content: center;
   align-items: center;
 
-  &--active {
-    cursor: default;
-  }
-
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -70,7 +66,10 @@
   }
 }
 
-.navigation__link--active {
+.navigation__link--active,
+.navigation__link--main-page-active {
+  cursor: default;
+
   &:hover,
   &:focus,
   &:active {
@@ -104,7 +103,7 @@
     }
 
     &--main-page-active {
-      border-bottom: 2px solid #ffffff;
+      border-color: #ffffff;
     }
   }
 }

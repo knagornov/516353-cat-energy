@@ -79,13 +79,24 @@
   }
 }
 
+// @media (min-width: $desktop-width) {
+//   .page-footer__bottom-wrapper {
+//     display: flex;
+
+//     width: 1440px;
+//     padding-right: 110px;
+//     padding-left: 110px;
+
+//     justify-content: space-between;
+//   }
+// }
+
 @media (min-width: $desktop-width) {
   .page-footer__bottom-wrapper {
     display: flex;
 
-    width: 1440px;
-    padding-right: 110px;
-    padding-left: 110px;
+    width: 1220px;
+    padding: 0;
 
     justify-content: space-between;
   }
