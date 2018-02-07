@@ -7,8 +7,6 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  margin-top: 24px;
-  margin-bottom: 34px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
@@ -35,20 +33,20 @@
   .decorated-title {
     font-size: 36px;
     line-height: 36px;
-    margin-top: 60px;
-    margin-bottom: 81px;
+    // padding-top: 60px;
+    // padding-bottom: 77px;
 
     &::after {
-      top: 29px;
+      top: 28px;
     }
   }
 }
 
-@media (min-width: $tablet-width) {
-  .decorated-title {
-     margin-top: 71px;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   .decorated-title {
+//      margin-top: 71px;
+//   }
+// }
 
 .decorated-title__wrapper {
   width: 320px;
@@ -92,6 +90,11 @@
   .decorated-title__text {
     padding-right: 38px;
     padding-left: 38px;
+
+    &--long {
+      max-width: none;
+      padding-top: 0;
+    }
   }
 }
 
@@ -99,6 +102,5 @@
   .decorated-title__text {
     padding-right: 40px;
     padding-left: 40px;
-
   }
 }
