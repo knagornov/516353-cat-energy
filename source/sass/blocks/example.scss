@@ -18,8 +18,8 @@
     flex-direction: column;
 
     width: 431px;
-    padding-right: 40px;
     margin-bottom: 0;
+    padding-right: 40px;
   }
 }
 
@@ -214,8 +214,10 @@
 
 @media (min-width: $desktop-width) {
   .example__costs {
-    width: 328px;
     display: flex;
+
+    width: 328px;
+
     justify-content: space-between;
   }
 }

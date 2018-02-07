@@ -1,3 +1,18 @@
+@media (min-width: $desktop-width) {
+  .form__field-group-wrapper {
+    display: flex;
+
+    width: 1220px;
+    margin-bottom: 63px;
+    padding-right: 110px;
+    padding-left: 110px;
+
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
 .form__wrapper {
   box-sizing: border-box;
   width: 320px;
@@ -22,15 +37,6 @@
     width: 768px;
     padding-right: 68px;
     padding-left: 72px;
-
-    &--field-group {
-      display: flex;
-      margin-bottom: 62px;
-      align-items: center;
-
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
 
     &--contacts,
     &--comment {
@@ -62,8 +68,9 @@
     }
 
     &--contacts {
-      padding-bottom: 62px;
       display: flex;
+
+      padding-bottom: 62px;
 
       justify-content: space-between;
       align-items: center;
@@ -86,12 +93,17 @@
 @media (min-width: $tablet-width) {
   .form__basic-info {
     padding-bottom: 73px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__basic-info {
     padding-bottom: 0;
   }
 }
 
 .form__text {
-  margin: 0;
+  margin-top: 25px;
   margin-bottom: 40px;
 
   font-family: "Oswald", "Arial", sans-serif;
@@ -107,11 +119,17 @@
 @media (min-width: $tablet-width) {
   .form__text {
     width: 345px;
-    margin-top: 30px;
-    margin-bottom: 67px;
+    margin-top: 57px;
+    margin-bottom: 66px;
 
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__text {
+    margin-top: 55px;
   }
 }
 
@@ -266,7 +284,7 @@
   .form__label--checkbox {
     &::before {
       top: -9px;
-      left: -2px;
+      left: 0;
 
       width: 38px;
       height: 38px;
@@ -416,9 +434,10 @@
 
 @media (min-width: $desktop-width) {
   .form__aims-wrapper {
-    margin-bottom: 0;
     width: 570px;
-    background-image: none;;
+    margin-bottom: 0;
+
+    background-image: none;
   }
 }
 
@@ -453,6 +472,7 @@
   .form__aims {
     width: 570px;
     margin: 0;
+
     border: 1px solid #e6e6e6;
   }
 }
@@ -528,20 +548,19 @@
     box-sizing: border-box;
     width: 285px;
     margin-bottom: 49px;
-    padding-left: 56px;
+    padding-left: 58px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__additional-product {
-    margin: 0;
     width: 245px;
+    margin: 0;
   }
 }
 
-
 .form__checkbox:checked + .form__label--checkbox::before {
-  background: url(../img/icon-tick.svg);
+  background: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 21px;

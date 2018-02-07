@@ -7,6 +7,7 @@
 .catalog__list {
   box-sizing: border-box;
   margin: 0;
+  margin-top: 28px;
   padding: 0;
 
   list-style: none;
@@ -19,14 +20,17 @@
     display: flex;
 
     width: 768px;
+    margin-top: 0;
     margin-right: auto;
     margin-left: auto;
     padding-right: 30px;
+    padding-bottom: 59px;
     padding-left: 30px;
+
+    border-top: none;
 
     justify-content: space-between;
     flex-wrap: wrap;
-    border-top: none;
   }
 }
 
@@ -34,6 +38,7 @@
   .catalog__list {
     width: 1440px;
     padding-right: 110px;
+    padding-bottom: 69px;
     padding-left: 110px;
   }
 }

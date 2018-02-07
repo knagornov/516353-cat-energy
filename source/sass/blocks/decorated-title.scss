@@ -33,8 +33,6 @@
   .decorated-title {
     font-size: 36px;
     line-height: 36px;
-    // padding-top: 60px;
-    // padding-bottom: 77px;
 
     &::after {
       top: 28px;
@@ -42,13 +40,9 @@
   }
 }
 
-// @media (min-width: $tablet-width) {
-//   .decorated-title {
-//      margin-top: 71px;
-//   }
-// }
-
 .decorated-title__wrapper {
+  display: block;
+
   width: 320px;
   margin-right: auto;
   margin-left: auto;
@@ -75,7 +69,6 @@
   padding-right: 20px;
   padding-left: 20px;
 
-  vertical-align: top;
   vertical-align: middle;
 
   background-color: #ffffff;

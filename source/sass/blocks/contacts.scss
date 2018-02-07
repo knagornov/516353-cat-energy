@@ -1,9 +1,9 @@
 .contacts {
-  box-sizing: border-box;
   position: relative;
 
   display: flex;
 
+  box-sizing: border-box;
   width: 320px;
   min-height: 114px;
   margin-right: auto;
@@ -26,14 +26,14 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding-right: 75px;
-    padding-left: 75px;
     position: absolute;
     z-index: 1;
     top: 95px;
     left: 110px;
 
     width: 570px;
+    padding-right: 75px;
+    padding-left: 75px;
 
     background-color: #ffffff;
   }

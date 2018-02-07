@@ -8,10 +8,11 @@
 @media (min-width: $tablet-width) {
   .additional-product {
     display: flex;
+
     padding-top: 25px;
+    padding-right: 37px;
     padding-bottom: 27px;
     padding-left: 37px;
-    padding-right: 37px;
 
     justify-content: space-between;
     flex-wrap: wrap;
@@ -121,8 +122,9 @@
 @media (min-width: $desktop-width) {
   .additional-product__price {
     width: 60px;
-    text-align: left;
     padding-right: 21px;
+
+    text-align: left;
   }
 }
 

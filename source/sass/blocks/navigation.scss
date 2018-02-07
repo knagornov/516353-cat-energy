@@ -1,8 +1,27 @@
-.navigation {
+@media (max-width: $tablet-width) {
+  .navigation {
+    &--closed {
+      display: none;
+    }
+
+    &--opened,
+    &--nojs {
+      display: block;
+    }
+  }
+}
+
+.navigation__list {
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__list {
+    display: flex;
+  }
 }
 
 .navigation__item {
@@ -86,9 +105,11 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 24.86px;
+
     border-bottom: 2px solid transparent;
 
-    &--active {
+    &--active,
+    &--main-page-active {
       border-bottom: 2px solid #68b738;
     }
   }

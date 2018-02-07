@@ -4,11 +4,11 @@
 
 @media (min-width: $tablet-width) {
   .additionally {
-    margin-bottom: 78px;
+    margin-bottom: 76px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .additionally {
     margin-bottom: 86px;
   }
@@ -16,9 +16,8 @@
 
 .additionally__list {
   margin: 0;
-
-  padding: 0;
   margin-top: 34px;
+  padding: 0;
 
   list-style: none;
 
@@ -27,8 +26,8 @@
 
 @media (min-width: $tablet-width) {
   .additionally__list {
-    margin-top: 0;
     box-sizing: border-box;
+    margin-top: 0;
 
     border: 1px solid #e6e6e6;
   }
@@ -37,6 +36,7 @@
 @media (min-width: $desktop-width) {
   .additionally__list {
     width: 895px;
+
     border: none;
   }
 }
@@ -53,6 +53,7 @@
 @media (min-width: $tablet-width) {
   .additionally__wrapper {
     width: 768px;
+    padding-top: 80px;
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -137,11 +138,12 @@
 @media (min-width: $desktop-width) {
   .additionally__order-all {
     width: 245px;
+    height: 289px;
     margin: 0;
     padding-top: 140px;
-    padding-left: 30px;
     padding-right: 30px;
-    height: 289px;
+    padding-left: 30px;
+
     text-align: center;
 
     &::before {
