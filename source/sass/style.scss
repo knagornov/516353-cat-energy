@@ -1,10 +1,11 @@
 //base
 @import "base/variables.scss";
+@import "base/mixins.scss";
 @import "base/fonts.scss";
 @import "base/global.scss";
-@import "base/visually-hidden.scss";
 
 //common
+@import "base/visually-hidden.scss";
 @import "blocks/button.scss";
 @import "blocks/decorated-title.scss";
 
@@ -18,7 +19,6 @@
 
 //index.html content
 @import "blocks/food-program.scss";
-@import "blocks/categories.scss";
 @import "blocks/food-categories.scss";
 @import "blocks/food-category.scss";
 @import "blocks/content-block.scss";
@@ -33,7 +33,7 @@
 @import "blocks/additionally.scss";
 @import "blocks/additional-product.scss";
 
-//form.hhtml content
+//form.html content
 @import "blocks/form.scss";
 
 //footer

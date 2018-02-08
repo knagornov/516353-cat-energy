@@ -1,16 +1,11 @@
 .advantages {
-  z-index: 1;
+  @include list-reset;
 
-  margin: 0;
   margin-top: 30px;
-  padding: 0;
 
-  list-style: none;
-}
-
-@media (min-width: $tablet-width) {
-  .advantages {
+  @media (min-width: $tablet-width) {
     position: relative;
+    z-index: 1;
 
     display: flex;
 
@@ -25,10 +20,8 @@
 
 .advantages__item {
   margin-bottom: 26px;
-}
 
-@media (min-width: $tablet-width) {
-  .advantages__item {
+  @media (min-width: $tablet-width) {
     margin-bottom: 0;
 
     &:nth-child(n + 3) {
@@ -56,10 +49,8 @@
       color: #f2f2f2;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .advantages__item {
+  @media (min-width: $desktop-width) {
     margin-right: auto;
 
     &:nth-child(n + 3) {
@@ -71,7 +62,7 @@
     }
 
     &:nth-child(n + 5) {
-      margin-top: 31px; //на случай переноса
+      margin-top: 31px;
     }
   }
 }

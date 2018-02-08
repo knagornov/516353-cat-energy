@@ -13,19 +13,15 @@
 
   justify-content: space-between;
   align-items: center;
-}
 
-@media (min-width: $tablet-width) {
-  .contacts {
+  @media (min-width: $tablet-width) {
     width: 768px;
     min-height: 201px;
     padding-right: 72px;
     padding-left: 72px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .contacts {
+  @media (min-width: $desktop-width) {
     position: absolute;
     z-index: 1;
     top: 95px;
@@ -50,10 +46,8 @@
   text-transform: uppercase;
 
   color: #111111;
-}
 
-@media (min-width: $tablet-width) {
-  .contacts__cooperation {
+  @media (min-width: $tablet-width) {
     width: 200px;
 
     font-size: 20px;
@@ -70,10 +64,8 @@
   line-height: 20px;
 
   color: #444444;
-}
 
-@media (min-width: $tablet-width) {
-  .contacts__address {
+  @media (min-width: $tablet-width) {
     width: 200px;
 
     font-size: 16px;
@@ -81,20 +73,20 @@
 
     text-align: right;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .contacts__address {
+  @media (min-width: $desktop-width) {
     width: 170px;
 
     text-align: left;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .contacts__city {
+.contacts__city {
+  @media (min-width: $tablet-width) {
     display: inline-block;
 
     margin-top: 20px;
+
+    vertical-align: baseline;
   }
 }

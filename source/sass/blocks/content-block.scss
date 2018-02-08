@@ -1,8 +1,5 @@
 .content-block {
-  box-sizing: border-box;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 18px;
+  padding-top: 17px;
   padding-bottom: 20px;
 
   background-color: #ffffff;
@@ -10,10 +7,8 @@
   &--example {
     background-color: #f2f2f2;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .content-block {
+  @media (min-width: $tablet-width) {
     padding-top: 44px;
 
     &--advantages {
@@ -28,10 +23,8 @@
       background-image: linear-gradient(to bottom, #ffffff 619px, transparent 619px), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .content-block {
+  @media (min-width: $desktop-width) {
     padding-top: 63px;
 
     &--advantages {
@@ -39,36 +32,15 @@
     }
 
     &--example {
-      padding-bottom: 70px;
+      padding-bottom: 0;
 
-      background-image: linear-gradient(to bottom, #ffffff 199px, transparent 199px), linear-gradient(to right, #f2f2f2 72.55%, #eaeaea 72.55%);
+      background-image: linear-gradient(to bottom, #ffffff 199px, transparent 199px), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
     }
   }
 }
 
 .content-block__wrapper {
-  box-sizing: border-box;
-  width: 320px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .content-block__wrapper {
-    width: 768px;
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .content-block__wrapper {
-    width: 1440px;
-    padding-right: 110px;
-    padding-left: 110px;
-  }
+  @include container;
 }
 
 .content-block__title {
@@ -80,11 +52,8 @@
   line-height: 60px;
 
   color: #111111;
-}
 
-@media (min-width: $tablet-width) {
-  .content-block__title {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
-    line-height: 60px;
   }
 }

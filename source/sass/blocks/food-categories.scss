@@ -1,12 +1,11 @@
 .food-categories {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  @include container;
 }
 
-@media (min-width: $desktop-width) {
-  .food-categories {
+.food-categories__list {
+  @include list-reset;
+
+  @media (min-width: $desktop-width) {
     display: flex;
 
     flex-wrap: wrap;
@@ -20,10 +19,8 @@
   &:last-child {
     margin-bottom: 0;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .food-categories__item {
+  @media (min-width: $tablet-width) {
     min-height: 372px;
     margin-bottom: 30px;
 
@@ -31,11 +28,13 @@
       margin-bottom: 0;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .food-categories__item {
+  @media (min-width: $desktop-width) {
     width: 570px;
     margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
   }
 }

@@ -28,20 +28,12 @@
   &:active {
     opacity: 1;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .logo {
+  @media (min-width: $tablet-width) {
     &--header {
       width: 173px;
 
       border-bottom: none;
     }
   }
-}
-
-.logo__image {
-  display: inline-block;
-
-  vertical-align: top;
 }
