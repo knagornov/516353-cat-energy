@@ -27,10 +27,8 @@
 
     background-color: #68b738;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .decorated-title {
+  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
 
@@ -46,16 +44,12 @@
   width: 320px;
   margin-right: auto;
   margin-left: auto;
-}
 
-@media (min-width: $tablet-width) {
-  .decorated-title__wrapper {
+  @media (min-width: $tablet-width) {
     width: 708px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .decorated-title__wrapper {
+  @media (min-width: $desktop-width) {
     width: 1300px;
   }
 }
@@ -77,10 +71,8 @@
     max-width: 181px;
     padding-top: 4px;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .decorated-title__text {
+  @media (min-width: $tablet-width) {
     padding-right: 38px;
     padding-left: 38px;
 
@@ -89,10 +81,8 @@
       padding-top: 0;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .decorated-title__text {
+  @media (min-width: $desktop-width) {
     padding-right: 40px;
     padding-left: 40px;
   }

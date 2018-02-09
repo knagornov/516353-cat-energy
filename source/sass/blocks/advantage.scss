@@ -36,10 +36,8 @@
   &--quick::before {
     background-image: url("../img/advantage-clock@1x.png");
   }
-}
 
-@media (min-width: $tablet-width) {
-  .advantage {
+  @media (min-width: $tablet-width) {
     width: 324px;
     min-height: 286px;
     padding: 0;
@@ -57,10 +55,8 @@
       height: 80px;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .advantage {
+  @media (min-width: $desktop-width) {
     width: 245px;
     min-height: 245px;
     padding-right: 0;
@@ -75,10 +71,8 @@
   line-height: 18px;
 
   color: #444444;
-}
 
-@media (min-width: $tablet-width) {
-  .advantage__description {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
   }
