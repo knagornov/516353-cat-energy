@@ -1,50 +1,75 @@
 .food-item {
-  padding-bottom: 24px;
-
   border-bottom: 1px solid #ededed;
-}
 
-@media (min-width: $tablet-width) {
-  .food-item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
     width: 324px;
-    min-height: 570px;
-    background-color: #f2f2f2; //временно
-  }
-}
+    min-height: 571px;
 
-@media (min-width: $desktop-width) {
-  .food-item {
+    border-bottom: none;
+    background-image: linear-gradient(to bottom, #ffffff 140px, #f2f2f2 140px);
+
+    justify-content: flex-end;
+
+    &:last-child {
+      min-height: 431px;
+      margin-top: 140px;
+
+      border: 1px solid #e6e6e6;
+      background-color: #ffffff;
+      background-image: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
     width: 245px;
-    min-height: 570px;
+
     background-color: #f2f2f2; //временно
   }
 }
 
 .food-item__wrapper {
-  padding-top: 25px;
-  box-sizing: border-box;
   display: flex;
 
+  box-sizing: border-box;
   width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 20px;
+  padding-bottom: 24px;
+  padding-left: 20px;
 
   flex-wrap: wrap;
-}
 
-@media (min-width: $tablet-width) {
-  .food-item__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+
     width: auto;
     margin: 0;
+    padding: 40px 38px;
+
+    align-items: center;
   }
 }
 
 .food-item__title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   padding-right: 60px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 170px;
+    margin-top: 100px; //временно
+    margin-right: 0;
+    margin-bottom: 15px;
+    padding: 0;
+
+    text-align: center;
+  }
 }
 
 .food-item__title-link {
@@ -59,6 +84,10 @@
   text-transform: uppercase;
 
   color: #111111;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .food-item__description-wrapper {
@@ -68,17 +97,33 @@
   width: 140px;
 
   justify-content: center;
-}
 
-@media (min-width: $tablet-width) {
-  .food-item__description-wrapper {
+  @media (min-width: $tablet-width) {
     width: 100%;
+    margin-bottom: 33px;
+
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
   }
 }
 
 .food-item__description {
   width: 100%;
+
   border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    height: 95px;
+  }
+}
+
+.food-item__description-item {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .food-item__field,
@@ -90,6 +135,10 @@
   line-height: 16px;
 
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .food-item__value {
@@ -97,8 +146,78 @@
 }
 
 .food-item__image-link {
-  width: 140px;
-  height: 144px;
-
   order: -1;
+}
+
+.food-item__image {
+  display: block;
+}
+
+.food__show-more {
+  display: block;
+
+  width: 100%;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #111111;
+
+  &::before {
+    display: block;
+
+    width: 30px;
+    height: 30px;
+    margin-top: 26px;
+    margin-right: auto;
+    margin-bottom: 23px;
+    margin-left: auto;
+
+    content: "";
+
+    background-image: linear-gradient(to bottom, transparent calc(50% - 1px), #d3d3d3 calc(50% - 1px), #d3d3d3 calc(50% + 1px), transparent calc(50% + 1px)), linear-gradient(to right, transparent calc(50% - 1px), #d3d3d3 calc(50% - 1px), #d3d3d3 calc(50% + 1px), transparent calc(50% + 1px));
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      margin-top: 0;
+      margin-bottom: 50px;
+
+      background-image: linear-gradient(to bottom, transparent calc(50% - 1px), #e6e6e6 calc(50% - 1px), #e6e6e6 calc(50% + 1px), transparent calc(50% + 1px)), linear-gradient(to right, transparent calc(50% - 1px), #e6e6e6 calc(50% - 1px), #e6e6e6 calc(50% + 1px), transparent calc(50% + 1px));
+    }
+  }
+}
+
+.food__tastes-info {
+  display: block;
+
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 21px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+
+  text-align: center;
+
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 26px;
+    margin-bottom: 83px;
+
+    font-size: 16px;
+    line-height: normal;
+  }
 }

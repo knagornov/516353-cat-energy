@@ -1,21 +1,48 @@
 .additional-product {
-  padding-top: 14px;
+  padding-top: 11px;
   padding-bottom: 17px;
 
   border-bottom: 1px solid #cdcdcd;
-}
 
-@media (min-width: $desktop-width) {
-  .additional-product {
+  @media (min-width: $tablet-width) {
     display: flex;
 
+    padding-top: 25px;
+    padding-right: 37px;
+    padding-bottom: 27px;
+    padding-left: 37px;
+
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 16px;
+
+    &:first-child {
+      border-top: 1px solid #cdcdcd;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
   }
 }
 
 .additional-product__title {
   margin: 0;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .additional-product__title-link {
@@ -28,14 +55,28 @@
   text-transform: uppercase;
 
   color: #222222;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-product__description {
   display: flex;
 
-  margin-bottom: 17px;
+  margin-bottom: 15px;
 
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 325px;
+    margin-left: auto;
+  }
 }
 
 .additional-product__quantity,
@@ -47,10 +88,48 @@
   line-height: 14px;
 
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
-@media (min-width: $desktop-width) {
-  .additional-product__order {
+.additional-product__price {
+  @media (min-width: $tablet-width) {
+    width: 95px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 60px;
+    padding-right: 21px;
+
+    text-align: left;
+  }
+}
+
+.additional-product__weight {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+
+    vertical-align: baseline;
+  }
+}
+
+.additional-product__order {
+  @media (min-width: $tablet-width) {
+    margin-top: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 245px;
+    margin-top: 0;
   }
 }

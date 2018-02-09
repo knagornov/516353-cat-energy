@@ -1,5 +1,16 @@
 .logo {
+  display: flex;
+
   outline: none;
+
+  justify-content: center;
+  align-items: center;
+
+  &--header {
+    width: 191px;
+
+    justify-content: space-between;
+  }
 
   &:hover,
   &:focus {
@@ -11,8 +22,18 @@
   }
 }
 
-.logo__name {
-  display: inline-block;
+.logo--main-page {
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
 
-  vertical-align: middle;
+  @media (min-width: $tablet-width) {
+    &--header {
+      width: 173px;
+
+      border-bottom: none;
+    }
+  }
 }

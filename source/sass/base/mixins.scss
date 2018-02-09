@@ -1,0 +1,28 @@
+@mixin container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 1300px) {
+    max-width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

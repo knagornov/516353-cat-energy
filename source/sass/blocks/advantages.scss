@@ -1,13 +1,17 @@
 .advantages {
-  margin: 0;
-  padding: 0;
+  @include list-reset;
 
-  list-style: none;
-}
+  margin-top: 30px;
 
-@media (min-width: $tablet-width) {
-  .advantages {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 1;
+
     display: flex;
+
+    margin-top: 73px;
+
+    counter-reset: advantagesCounter;
 
     flex-wrap: wrap;
     justify-content: space-between;
@@ -16,28 +20,49 @@
 
 .advantages__item {
   margin-bottom: 26px;
-}
 
-@media (min-width: $tablet-width) {
-  .advantages__item {
-    width: 324px;
-    min-height: 230px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+
+    &:nth-child(n + 3) {
+      margin-top: 31px;
+    }
+
+    &:nth-child(odd) {
+      margin-right: auto;
+    }
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      top: -39px;
+      left: 116px;
+
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      font-weight: 400;
+      line-height: 281px;
+
+      content: counter(advantagesCounter);
+      counter-increment: advantagesCounter;
+
+      color: #f2f2f2;
+    }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .advantages__item {
-    width: 245px;
-    min-height: 245px;
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
+
+    &:nth-child(n + 3) {
+      margin-top: 0;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(n + 5) {
+      margin-top: 31px;
+    }
   }
-}
-
-.advantage__description {
-  margin: 0;
-
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-
-  color: #444444;
 }

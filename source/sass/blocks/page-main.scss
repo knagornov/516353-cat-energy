@@ -1,15 +1,10 @@
 .page-main__title {
-  display: flex;
+  @include container;
 
-  box-sizing: border-box;
-  width: 320px;
-  min-height: 90px;
-  margin: 0;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 28px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
@@ -18,21 +13,14 @@
 
   color: #111111;
 
-  align-items: center;
-}
+  @media (min-width: $tablet-width) {
+    padding-top: 31px;
+    padding-bottom: 25px;
 
-@media (min-width: $tablet-width) {
-  .page-main__title {
-    width: 768px;
-    padding-right: 30px;
-    padding-left: 30px;
+    font-size: 60px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-main__title {
-    width: 1440px;
-    padding-right: 110px;
-    padding-left: 110px;
+  @media (min-width: $desktop-width) {
+    padding-top: 80px;
   }
 }

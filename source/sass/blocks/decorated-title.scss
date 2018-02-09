@@ -1,13 +1,12 @@
 .decorated-title {
+  position: relative;
+
   display: block;
 
   box-sizing: border-box;
-  width: 320px;
-  margin-right: auto;
-  margin-bottom: 32px;
-  margin-left: auto;
+  width: 100%;
+  margin: 0;
   padding: 0;
-  padding-right: 20px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
@@ -15,30 +14,50 @@
   line-height: 24px;
 
   color: #111111;
-  background-image: linear-gradient(to bottom, transparent 17px, #68b738 17px, #68b738 20px, transparent 20px);
 
-  &--long {
-    padding-right: 99px;
+  &::after {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    left: 0;
+
+    height: 3px;
+
+    content: "";
+
+    background-color: #68b738;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after {
+      top: 28px;
+    }
   }
 }
 
-@media (min-width: $tablet-width) {
-  .decorated-title {
-    width: 768px;
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-}
+.decorated-title__wrapper {
+  display: block;
 
-@media (min-width: $desktop-width) {
-  .decorated-title {
-    width: 1440px;
-    padding-right: 70px;
-    padding-left: 70px;
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1300px;
   }
 }
 
 .decorated-title__text {
+  position: relative;
+  z-index: 1;
+
   display: inline-block;
 
   padding-right: 20px;
@@ -47,10 +66,23 @@
   vertical-align: middle;
 
   background-color: #ffffff;
-}
 
-@media (min-width: $tablet-width) {
-  .decorated-title__text {
+  &--long {
+    max-width: 181px;
+    padding-top: 4px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 38px;
+    padding-left: 38px;
+
+    &--long {
+      max-width: none;
+      padding-top: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
     padding-right: 40px;
     padding-left: 40px;
   }

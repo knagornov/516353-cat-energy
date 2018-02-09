@@ -1,41 +1,43 @@
 .page-header {
-  box-sizing: border-box;
-  width: 320px;
-  min-height: 50px; //временно
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-width: $desktop-width) {
-  .page-header {
-    &--main-page {
-      position: absolute;
-    }
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .page-header {
+  @media (min-width: $tablet-width) {
     display: flex;
 
-    width: 768px;
-    padding-top: 24px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 32px;
     padding-right: 30px;
-    padding-bottom: 24px;
+    padding-bottom: 32px;
     padding-left: 30px;
 
     align-items: center;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1300px;
+    padding-top: 63px;
+    padding-right: 40px;
+    padding-bottom: 0;
+    padding-left: 40px;
+
+    &--main-page {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      left: 0;
+    }
+  }
 }
 
-@media (min-width: $desktop-width) {
-  .page-header {
-    width: 1440px;
-    padding-top: 0;
-    padding-right: 110px;
-    padding-bottom: 0;
-    padding-left: 110px;
+.page-header__top-bar {
+  border-bottom: #e6e6e6 solid 1px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
   }
 }
 
@@ -43,18 +45,19 @@
   display: flex;
 
   box-sizing: border-box;
-  min-height: 66px;
-  padding: 20px 20px;
-
-  border-bottom: #e6e6e6 solid 1px;
+  width: 320px;
+  min-height: 65px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px;
 
   justify-content: space-between;
   align-items: center;
-}
 
-@media (min-width: $tablet-width) {
-  .page-header__logo-wrapper {
+  @media (min-width: $tablet-width) {
+    width: auto;
     min-height: auto;
+    margin: 0;
     padding: 0;
 
     border-bottom: none;
@@ -63,6 +66,8 @@
 
 .page-header__nav-toggle {
   position: relative;
+
+  display: block;
 
   width: 24px;
   height: 18px;
@@ -100,6 +105,10 @@
     bottom: 0;
   }
 
+  &--nojs {
+    display: none;
+  }
+
   &--active {
     background-image: none;
   }
@@ -115,16 +124,8 @@
 
     transform: rotate(-45deg);
   }
-}
 
-@media (min-width: $tablet-width) {
-  .page-header__nav-toggle {
+  @media (min-width: $tablet-width) {
     display: none;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .page-header__list {
-    display: flex;
   }
 }

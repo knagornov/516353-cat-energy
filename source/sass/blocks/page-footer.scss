@@ -6,24 +6,55 @@
   &--main-page {
     background-color: #ffffff;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-footer__contacts {
+  @media (min-width: $desktop-width) {
     position: relative;
 
-    width: 1440px;
+    max-width: 1300px;
     margin-right: auto;
     margin-left: auto;
   }
 }
 
 .page-footer__map {
-  display: flex;
-
   background-color: #f2f2f2;
+}
 
-  justify-content: center;
+.page-footer__map-link {
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+  max-width: 320px;
+  height: 362px;
+  margin-right: auto;
+  margin-left: auto;
+
+  &::after {
+    position: absolute;
+    top: 139px;
+    left: 129px;
+
+    width: 55px;
+    height: 53px;
+
+    content: "";
+
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    height: 396px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1300px;
+    height: 400px;
+  }
 }
 
 .page-footer__map-image {
@@ -31,34 +62,17 @@
 }
 
 .page-footer__bottom-wrapper {
-  box-sizing: border-box;
-  width: 320px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
-}
+  @include container;
 
-@media (min-width: $tablet-width) {
-  .page-footer__bottom-wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
 
-    width: 768px;
-    padding-right: 30px;
-    padding-left: 30px;
+    min-height: 150px;
 
     justify-content: space-between;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-footer__bottom-wrapper {
-    display: flex;
-
-    width: 1440px;
-    padding-right: 110px;
-    padding-left: 110px;
-
+  @media (min-width: $desktop-width) {
     justify-content: space-between;
   }
 }
@@ -70,6 +84,12 @@
 
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+
+    justify-content: flex-start;
+  }
 }
 
 .page-footer__copyright-wrapper {
@@ -79,9 +99,29 @@
 
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}
+
+.page-footer__logo {
+  padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .page-footer__copyright {
+  display: flex;
+
+  width: 320px;
+
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -90,7 +130,25 @@
 
   color: #444444;
 
+  align-items: center;
+  justify-content: space-between;
+
   &:active {
     opacity: 0.3;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: #68b738;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+
+    fill: #68b738;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
   }
 }

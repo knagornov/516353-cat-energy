@@ -1,0 +1,79 @@
+.advantage {
+  position: relative;
+
+  box-sizing: border-box;
+  padding-left: 80px;
+
+  &::before {
+    position: absolute;
+    top: -3px;
+    left: 0;
+
+    display: block;
+
+    width: 60px;
+    height: 60px;
+
+    content: "";
+
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  &--healthy::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--ease::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--economical::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--quick::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 286px;
+    padding: 0;
+    padding-top: 112px;
+    padding-right: 100px;
+
+    &--quick {
+      padding-right: 70px;
+    }
+
+    &::before {
+      top: 0;
+
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    min-height: 245px;
+    padding-right: 0;
+  }
+}
+
+.advantage__description {
+  margin: 0;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
