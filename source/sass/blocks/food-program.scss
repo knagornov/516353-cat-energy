@@ -1,6 +1,12 @@
 .food-program {
+  background-image: linear-gradient(to bottom, transparent 305px, #ffffff 280px), linear-gradient(to right, #65a93c 50%, #63a73a 50%);
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to right, #ffffff 53.5%, #64a83b 53.5%);
+    background-image: linear-gradient(to right, #ffffff 53.5%, #63a73a 53.5%);
   }
 }
 
@@ -10,7 +16,7 @@
 
   text-align: center;
 
-  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #64a83b 305px, #ffffff 280px);
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
 
   @include container;
