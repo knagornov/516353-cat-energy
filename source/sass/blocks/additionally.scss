@@ -1,40 +1,30 @@
 .additionally {
   margin-bottom: 35px;
-}
 
-@media (min-width: $tablet-width) {
-  .additionally {
+  @media (min-width: $tablet-width) {
     margin-bottom: 76px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .additionally {
+  @media (min-width: $desktop-width) {
     margin-bottom: 86px;
   }
 }
 
 .additionally__list {
-  margin: 0;
-  margin-top: 34px;
-  padding: 0;
+  @include list-reset;
 
-  list-style: none;
+  margin-top: 34px;
 
   border-top: 1px solid #cdcdcd;
-}
 
-@media (min-width: $tablet-width) {
-  .additionally__list {
+  @media (min-width: $tablet-width) {
     box-sizing: border-box;
     margin-top: 0;
 
     border: 1px solid #e6e6e6;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .additionally__list {
+  @media (min-width: $desktop-width) {
     width: 895px;
 
     border: none;
@@ -42,30 +32,14 @@
 }
 
 .additionally__wrapper {
-  box-sizing: border-box;
-  width: 320px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
-}
+  @include container;
 
-@media (min-width: $tablet-width) {
-  .additionally__wrapper {
-    width: 768px;
+  @media (min-width: $tablet-width) {
     padding-top: 80px;
-    padding-right: 30px;
-    padding-left: 30px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .additionally__wrapper {
+  @media (min-width: $desktop-width) {
     display: flex;
-
-    width: 1440px;
-    padding-right: 110px;
-    padding-left: 110px;
 
     justify-content: space-between;
   }
@@ -92,6 +66,7 @@
   text-decoration: none;
 
   color: #ffffff;
+  background-color: #64a83b;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
 
@@ -111,10 +86,8 @@
 
     background: url("../img/icon-gift.svg") no-repeat;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .additionally__order-all {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
 
     width: 708px;
@@ -124,19 +97,19 @@
     padding-right: 100px;
     padding-left: 423px;
 
+    line-height: 19px;
+
     text-align: left;
 
-    background-size: cover; // временно
+    background-image: none; // временно
 
     &::before {
       top: 65px;
       left: 91px;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .additionally__order-all {
+  @media (min-width: $desktop-width) {
     width: 245px;
     height: 289px;
     margin: 0;

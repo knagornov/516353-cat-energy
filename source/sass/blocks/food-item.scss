@@ -1,18 +1,13 @@
 .food-item {
-  padding-bottom: 24px;
-
   border-bottom: 1px solid #ededed;
-}
 
-@media (min-width: $tablet-width) {
-  .food-item {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
 
     box-sizing: border-box;
     width: 324px;
     min-height: 571px;
-    padding: 40px 38px;
 
     border-bottom: none;
     background-image: linear-gradient(to bottom, #ffffff 140px, #f2f2f2 140px);
@@ -28,12 +23,9 @@
       background-image: none;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .food-item {
+  @media (min-width: $desktop-width) {
     width: 245px;
-    min-height: 571px;
 
     background-color: #f2f2f2; //временно
   }
@@ -47,19 +39,18 @@
   margin-right: auto;
   margin-left: auto;
   padding-right: 20px;
+  padding-bottom: 24px;
   padding-left: 20px;
 
   flex-wrap: wrap;
-}
 
-@media (min-width: $tablet-width) {
-  .food-item__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
 
     width: auto;
     margin: 0;
-    padding: 0;
+    padding: 40px 38px;
 
     align-items: center;
   }
@@ -69,10 +60,8 @@
   margin: 0;
   margin-bottom: 12px;
   padding-right: 60px;
-}
 
-@media (min-width: $tablet-width) {
-  .food-item__title {
+  @media (min-width: $tablet-width) {
     max-width: 170px;
     margin-top: 100px; //временно
     margin-right: 0;
@@ -95,10 +84,8 @@
   text-transform: uppercase;
 
   color: #111111;
-}
 
-@media (min-width: $tablet-width) {
-  .food-item__title-link {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
   }
 }
@@ -110,19 +97,15 @@
   width: 140px;
 
   justify-content: center;
-}
 
-@media (min-width: $tablet-width) {
-  .food-item__description-wrapper {
+  @media (min-width: $tablet-width) {
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
 
     align-items: center;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .food-item__description-wrapper {
+  @media (min-width: $desktop-width) {
     margin-bottom: 33px;
   }
 }
@@ -131,14 +114,14 @@
   width: 100%;
 
   border-collapse: collapse;
-}
 
-@media (min-width: $tablet-width) {
-  .food-item__description {
+  @media (min-width: $tablet-width) {
     height: 95px;
   }
+}
 
-  .food-item__description-item {
+.food-item__description-item {
+  @media (min-width: $tablet-width) {
     border-bottom: 1px solid #cdcdcd;
   }
 }
@@ -152,11 +135,8 @@
   line-height: 16px;
 
   color: #444444;
-}
 
-@media (min-width: $tablet-width) {
-  .food-item__field,
-  .food-item__value {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
   }
 }
@@ -203,10 +183,8 @@
 
     background-image: linear-gradient(to bottom, transparent calc(50% - 1px), #d3d3d3 calc(50% - 1px), #d3d3d3 calc(50% + 1px), transparent calc(50% + 1px)), linear-gradient(to right, transparent calc(50% - 1px), #d3d3d3 calc(50% - 1px), #d3d3d3 calc(50% + 1px), transparent calc(50% + 1px));
   }
-}
 
-@media (min-width: $tablet-width) {
-  .food__show-more {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
 
     &::before {
@@ -234,12 +212,10 @@
   text-align: center;
 
   color: #444444;
-}
 
-@media (min-width: $tablet-width) {
-  .food__tastes-info {
-    margin-top: 27px;
-    margin-bottom: 85px;
+  @media (min-width: $tablet-width) {
+    margin-top: 26px;
+    margin-bottom: 83px;
 
     font-size: 16px;
     line-height: normal;

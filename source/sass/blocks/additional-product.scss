@@ -3,10 +3,8 @@
   padding-bottom: 17px;
 
   border-bottom: 1px solid #cdcdcd;
-}
 
-@media (min-width: $tablet-width) {
-  .additional-product {
+  @media (min-width: $tablet-width) {
     display: flex;
 
     padding-top: 25px;
@@ -22,10 +20,8 @@
       border-bottom: none;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .additional-product {
+  @media (min-width: $desktop-width) {
     padding: 0;
     padding-top: 15px;
     padding-bottom: 16px;
@@ -43,11 +39,9 @@
 .additional-product__title {
   margin: 0;
   margin-bottom: 10px;
-}
 
-@media (min-width: $tablet-width) {
-  .additional-product__title {
-    margin: 0;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -61,10 +55,8 @@
   text-transform: uppercase;
 
   color: #222222;
-}
 
-@media (min-width: $tablet-width) {
-  .additional-product__title-link {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
   }
@@ -76,16 +68,12 @@
   margin-bottom: 15px;
 
   justify-content: space-between;
-}
 
-@media (min-width: $tablet-width) {
-  .additional-product__description {
+  @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .additional-product__description {
+  @media (min-width: $desktop-width) {
     width: 325px;
     margin-left: auto;
   }
@@ -100,16 +88,15 @@
   line-height: 14px;
 
   color: #444444;
-}
 
-@media (min-width: $tablet-width) {
-  .additional-product__quantity,
-  .additional-product__price {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
   }
+}
 
-  .additional-product__price {
+.additional-product__price {
+  @media (min-width: $tablet-width) {
     width: 95px;
 
     font-size: 16px;
@@ -117,10 +104,8 @@
 
     text-align: right;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .additional-product__price {
+  @media (min-width: $desktop-width) {
     width: 60px;
     padding-right: 21px;
 
@@ -130,20 +115,20 @@
 
 .additional-product__weight {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+
+    vertical-align: baseline;
+  }
 }
 
-@media (min-width: $tablet-width) {
-  .additional-product__weight {
-    display: inline-block;
-  }
-
-  .additional-product__order {
+.additional-product__order {
+  @media (min-width: $tablet-width) {
     margin-top: 23px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .additional-product__order {
+  @media (min-width: $desktop-width) {
     width: 245px;
     margin-top: 0;
   }
