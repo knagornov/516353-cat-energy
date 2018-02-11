@@ -70,10 +70,12 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
+    padding-top: 4px;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 10px;
     width: 325px;
     margin-left: auto;
   }
@@ -125,7 +127,7 @@
 
 .additional-product__order {
   @media (min-width: $tablet-width) {
-    margin-top: 23px;
+    margin-top: 22px;
   }
 
   @media (min-width: $desktop-width) {

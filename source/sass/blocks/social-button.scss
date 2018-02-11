@@ -1,0 +1,64 @@
+.social-button__link {
+  display: flex;
+
+  width: 22px;
+  height: 22px;
+  padding: 15px 10px;
+
+  outline: none;
+
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 30px;
+    padding: 15px 6px;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: #68b738;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+
+    fill: #68b738;
+  }
+}
+
+.social-button__icon {
+  &--vkontakte {
+    width: 22px;
+    height: 12px;
+  }
+
+  &--instagram {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--facebook {
+    width: 10px;
+    height: 19px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--vkontakte {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      width: 14px;
+      height: 28px;
+      margin-right: auto;
+    }
+  }
+}

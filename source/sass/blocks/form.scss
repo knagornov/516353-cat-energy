@@ -402,15 +402,17 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 69px;
+    margin-left: calc(50% - 314px);
 
-    border: none;
-    background-image: linear-gradient(to right, #ffffff 50%, transparent 50%), linear-gradient(to bottom, #e6e6e6 1px, #ffffff 1px, #ffffff calc(100% - 1px), #e6e6e6 calc(100% - 1px));
+    border: 1px solid #e6e6e6;
+    border-right: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    margin-bottom: 0;
+    margin: 0;
 
+    border: none;
     background-image: none;
   }
 }
@@ -429,18 +431,17 @@
 
   @media (min-width: $tablet-width) {
     width: 628px;
+    margin: 0;
     padding-top: 34px;
     padding-right: 30px;
     padding-bottom: 31px;
     padding-left: 87px;
 
-    border: 1px solid #e6e6e6;
     border-right: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    margin: 0;
 
     border: 1px solid #e6e6e6;
   }

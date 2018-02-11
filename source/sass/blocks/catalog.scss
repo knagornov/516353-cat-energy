@@ -5,9 +5,9 @@
 }
 
 .catalog__list {
-  @include list-reset;
-
   border-top: 1px solid #ededed;
+
+  @include list-reset;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -30,7 +30,15 @@
   @media (min-width: $desktop-width) {
     width: 1300px;
     padding-right: 40px;
-    padding-bottom: 72px;
+    padding-bottom: 69px;
     padding-left: 40px;
+  }
+}
+
+.catalog__item {
+  @media (min-width: $desktop-width) {
+    &:nth-child(n + 5) {
+      margin-top: 3px;
+    }
   }
 }

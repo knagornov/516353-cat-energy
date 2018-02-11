@@ -1,31 +1,43 @@
 .food-program {
-  background-image: linear-gradient(to bottom, transparent 305px, #ffffff 280px), linear-gradient(to right, #65a93c 50%, #63a73a 50%);
+  background-image: linear-gradient(to bottom, transparent 305px, #ffffff 280px), linear-gradient(to right, #65a93c 40%, #63a73a 60%);
 
   @media (min-width: $tablet-width) {
     background-image: none;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to right, #ffffff 53.5%, #63a73a 53.5%);
+    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff calc(50% + 40px), #63a73a calc(50% + 40px));
+    background-repeat: no-repeat, no-repeat;
+    background-size: 680px auto, 100% 100%;
+    background-position: calc(50% + 380px) 0, 0 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient(to right, #ffffff calc(50% + 40px), #63a73a calc(50% + 40px));
+    }
   }
 }
 
 .food-program__wrapper {
+  @include container;
+
   padding-top: 27px;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
 
   text-align: center;
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
 
-  @include container;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
 
-    min-height: 841px;
-    padding-top: 31px;
+    min-height: 834px;
+    padding-top: 24px;
     padding-bottom: 0;
 
     text-align: left;
@@ -37,8 +49,6 @@
     min-height: 696px;
     margin-bottom: 80px;
     padding-top: 222px;
-
-    background-image: linear-gradient(to right, #ffffff 690px, #64a83b 690px);
   }
 }
 
@@ -54,6 +64,9 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 1;
+
     margin-bottom: 42px;
     margin-left: 87px;
 
@@ -85,6 +98,9 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 1;
+
     margin-bottom: 43px;
     margin-left: 87px;
 
@@ -101,28 +117,43 @@
 }
 
 .food-program__image-wrapper {
+  display: block;
+
   width: 280px;
   height: 271px;
 
   @media (min-width: $tablet-width) {
-    display: none; //временно
+    position: absolute;
+    top: 225px;
+    left: 29px;
+
+    width: 709px;
+    height: 609px;
   }
-}
 
+  @media (min-width: $desktop-width) {
+    top: 142px;
+    left: 490px;
 
-.food-program__image {
-  display: block;
+    width: 552px;
+    height: 499px;
+  }
 }
 
 .food-program__choice {
   width: 280px;
+  margin-top: 3px;
 
   font-size: 14px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 1;
+
     width: 245px;
     min-height: 52px;
+    margin-top: 0;
     margin-left: 90px;
 
     font-size: 20px;
