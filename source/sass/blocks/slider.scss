@@ -1,19 +1,20 @@
 .slider {
+  display: flex;
+  justify-content: space-between;
+
   position: relative;
 
   padding-top: 273px;
   padding-bottom: 15px;
 
-  text-align: center;
-
   &::before {
     position: absolute;
     top: 276px;
-    left: 96px;
+    left: 99px;
 
     display: block;
 
-    width: 84px;
+    width: 82px;
     height: 12px;
 
     content: "";
@@ -24,7 +25,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 537px;
+    padding-top: 532px;
     padding-bottom: 0;
 
     &::before {
@@ -42,7 +43,7 @@
   @media (min-width: $desktop-width) {
     width: 650px;
     margin-right: -40px;
-    padding-top: 443px;
+    padding-top: 439px;
 
     &::before {
       top: 451px;
@@ -57,16 +58,64 @@
   }
 }
 
-.slider__image {
+.slider__image-wrapper {
   position: absolute;
   z-index: -1;
   top: 0;
   left: -20px;
 
-  max-width: 320px;
+  width: 320px;
+  height: 240px;
 
   @media (min-width: $tablet-width) {
-    display: none; //временно
+    z-index: 0;
+
+    overflow: hidden;
+
+    height: 517px;
+
+    &--before {
+      left: 16px;
+
+      width: 338px;
+    }
+
+    &--after {
+      right: 2px;
+      left: auto;
+
+      display: flex;
+
+      width: 352px;
+
+      justify-content: flex-end;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -114px;
+
+    &--before {
+      left: -40px;
+
+      width: 366px;
+    }
+
+    &--after {
+      right: 0;
+
+      width: 325px;
+    }
+  }
+}
+
+.slider__image {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    min-width: 690px;
+    max-width: 690px;
+    height: 517px;
   }
 }
 
@@ -84,7 +133,11 @@
   color: #111111;
 
   &--before {
-    margin-right: 116px;
+    margin-left: 44px;
+  }
+
+  &--after {
+    margin-right: 38px;
   }
 
   &--before::before,
@@ -105,22 +158,27 @@
   }
 
   &--before::before {
-    top: 9px;
+    top: 7px;
     left: 61px;
   }
 
   &--after::before {
-    top: 9px;
-    left: -57px;
+    top: 7px;
+    left: -59px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    line-height: 30px;
 
     border-bottom: 1px dotted #bebebe;
 
     &--before {
-      margin-right: 465px;
+      margin-left: 69px;
+    }
+
+    &--after {
+      margin-right: 69px;
     }
 
     &--before::before,
@@ -140,13 +198,17 @@
 
   @media (min-width: $desktop-width) {
     &--before {
-      margin-right: 470px;
+      margin-left: 40px;
+    }
+
+    &--after {
+      margin-right: 40px;
     }
   }
 }
 
-.slider__input-before:checked ~ .slider__image--before,
-.slider__input-after:checked ~ .slider__image--after {
+.slider__input-before:checked ~ .slider__image-wrapper--before,
+.slider__input-after:checked ~ .slider__image-wrapper--after {
   z-index: 0;
 }
 

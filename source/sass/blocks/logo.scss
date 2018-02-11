@@ -1,16 +1,6 @@
 .logo {
-  display: flex;
-
+  display: block;
   outline: none;
-
-  justify-content: center;
-  align-items: center;
-
-  &--header {
-    width: 191px;
-
-    justify-content: space-between;
-  }
 
   &:hover,
   &:focus {
@@ -20,20 +10,44 @@
   &:active {
     opacity: 0.6;
   }
-}
 
-.logo--main-page {
-  &:hover,
-  &:focus,
-  &:active {
+  &--main-page:hover,
+  &--main-page:focus,
+  &--main-page:active {
     opacity: 1;
   }
+}
 
-  @media (min-width: $tablet-width) {
-    &--header {
-      width: 173px;
+.logo__image {
+  display: block;
 
-      border-bottom: none;
+  &--icon {
+    width: 33px;
+    height: 38px;
+    margin-bottom: 5px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
     }
+  }
+
+  &--header {
+    width: 101px;
+    height: 18px;
+
+    @media (min-width: $tablet-width) {
+      width: 173px;
+      height: 58px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 202px;
+      height: 59px;
+    }
+  }
+
+  &--footer {
+    width: 128px;
+    height: 24px;
   }
 }

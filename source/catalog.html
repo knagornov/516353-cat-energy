@@ -11,9 +11,15 @@
     <header class="page-header">
       <div class="page-header__top-bar">
         <div class="page-header__logo-wrapper">
-          <a class="page-header__logo logo logo--header" href="index.html">
-            <img class="logo__image" src="img/icon-logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-            <img class="logo__image" src="img/logo-mobile.svg" width="101" height="18" alt="Cat Energy">
+          <a class="logo" href="index.html">
+            <img class="logo__image logo__image--icon" src="img/icon-logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+          </a>
+          <a class="logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__image logo__image--header" src="img/logo-mobile.svg" alt="Cat Energy">
+            </picture>
           </a>
           <button class="page-header__nav-toggle page-header__nav-toggle--nojs" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -61,7 +67,11 @@
                 </table>
               </div>
               <a class="food-item__image-link" href="#">
-                <img class="food-item__image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Фото Cat Energy Pro 500 грамм со вкусом курицы">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+                  <img class="food-item__image" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Фото Cat Energy Pro 500 грамм со вкусом курицы">
+                </picture>
               </a>
               <a class="food-item__order button" href="#">Заказать</a>
             </div>
@@ -87,7 +97,11 @@
                 </table>
               </div>
               <a class="food-item__image-link" href="#">
-                <img class="food-item__image" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Фото Cat Energy Pro 1000 грамм со вкусом курицы">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+                  <img class="food-item__image" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Фото Cat Energy Pro 1000 грамм со вкусом курицы">
+                </picture>
               </a>
               <a class="food-item__order button" href="#">Заказать</a>
             </div>
@@ -113,7 +127,11 @@
                 </table>
               </div>
               <a class="food-item__image-link" href="#">
-                <img class="food-item__image" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Фото Cat Energy Pro 500 грамм со вкусом рыбы">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+                  <img class="food-item__image" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Фото Cat Energy Pro 500 грамм со вкусом рыбы">
+                </picture>
               </a>
               <a class="food-item__order button" href="#">Заказать</a>
             </div>
@@ -139,7 +157,11 @@
                 </table>
               </div>
               <a class="food-item__image-link" href="#">
-                <img class="food-item__image" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Фото Cat Energy Pro 1000 грамм со вкусом рыбы">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+                  <img class="food-item__image" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Фото Cat Energy Pro 1000 грамм со вкусом рыбы">
+                </picture>
               </a>
               <a class="food-item__order button" href="#">Заказать</a>
             </div>
@@ -165,7 +187,11 @@
                 </table>
               </div>
               <a class="food-item__image-link" href="#">
-                <img class="food-item__image" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Фото Cat Energy Pro 500 грамм со вкусом гречки">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+                  <img class="food-item__image" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Фото Cat Energy Pro 500 грамм со вкусом гречки">
+                </picture>
               </a>
               <a class="food-item__order button" href="#">Заказать</a>
             </div>
@@ -191,7 +217,11 @@
                 </table>
               </div>
               <a class="food-item__image-link" href="#">
-                <img class="food-item__image" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Фото Cat Energy Pro 1000 грамм со вкусом гречки">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+                  <img class="food-item__image" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Фото Cat Energy Pro 1000 грамм со вкусом гречки">
+                </picture>
               </a>
               <a class="food-item__order button" href="#">Заказать</a>
             </div>
@@ -217,7 +247,11 @@
                 </table>
               </div>
               <a class="food-item__image-link" href="#">
-                <img class="food-item__image" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Фото Cat Energy Pro 500 грамм со вкусом риса">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+                  <img class="food-item__image" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x"  alt="Фото Cat Energy Pro 500 грамм со вкусом риса">
+                </picture>
               </a>
               <a class="food-item__order button" href="#">Заказать</a>
             </div>
@@ -283,36 +317,36 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__contacts">
+      <div class="page-footer__contacts page-footer__contacts--main-page">
         <div class="contacts">
           <b class="contacts__cooperation">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
           <p class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span class="contacts__city">Санкт-Петербург</span></p>
         </div>
         <div class="page-footer__map">
           <a class="page-footer__map-link" href="#">
-            <img class="page-footer__map-image" src="img/map.jpg" width="320" height="362" alt="Расположение на карте: Большая Конюшенная, 19/8, Санкт-Петербург">
+            <span class="visually-hidden">Расположение на карте</span>
           </a>
         </div>
       </div>
       <div class="page-footer__bottom-wrapper">
         <div class="page-footer__logo-wrapper">
-          <a class="page-footer__logo logo" href="index.html">
-            <img class="logo__name" src="img/logo-mobile.svg" width="128" height="24" alt="Cat Energy">
+          <a class="logo" href="index.html">
+            <img class="logo__image--footer" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
           </a>
         </div>
         <ul class="page-footer__social social">
           <li class="social__item social-button">
-            <a class="social-button__link social-button__link--vkontakte" href="#">
+            <a class="social-button__link" href="#">
               <span class="visually-hidden">Мы в Вконтакте</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 12" width="22" height="12" fill="#666666">
+              <svg class="social-button__icon social-button__icon--vkontakte" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 12" width="22" height="12" fill="#666666">
                 <path d="M17.6 12c-.3 0-.9-.1-1.5-.5-.5-.3-.9-.7-1.3-1.2-.3-.3-.9-.9-1.1-.9-.2.1-.4.7-.3 1.2 0 .1 0 .6-.3.9-.3.3-.8.4-.9.4h-1.4c-.7 0-3.2-.2-5.4-2.3C2.5 7.1.2 2.2.1 2 0 1.6-.1 1.2.2.9c.3-.3.8-.4 1-.4h3.1c.1 0 .4.1.7.3.3.2.4.5.5.6a16.53 16.53 0 0 0 2.6 4c.1-.4.2-1.4.1-2.3 0-.4-.1-.8-.2-1-.1-.1-.3-.2-.5-.2l-.6-.5c0-.5.5-.9.9-1.1.5-.2 1.3-.3 2.3-.3h.5c.9 0 1.2.1 1.6.1 1.2.3 1.2 1.3 1.1 2.5v1.6c0 .3 0 .8.1 1 .2-.1.6-.5 1.5-1.9.6-.9 1-1.9 1.1-2.1.1-.3.4-.7 1.2-.7h3.4c.7 0 1.2.2 1.3.7.2.5.1 1.3-1.7 3.5-.3.3-.5.6-.7.9-.5.4-.9 1-.9 1.1 0 .1.5.5.9.9 1.1.9 1.9 1.7 2.2 2.3.4.6.3 1 .2 1.3-.3.7-1.2.7-1.4.8h-2.8-.1zm-3.9-3.7c.7 0 1.2.6 1.8 1.2.4.4.7.8 1.1 1 .5.3 1 .3 1 .3h2.9c.1 0 .3-.1.4-.1 0 0 0-.1-.1-.1-.3-.5-1-1.3-2-2.1-.9-.7-1.3-1.1-1.4-1.7 0-.6.4-1.1 1.2-2.1.2-.2.4-.5.7-.8 1.1-1.4 1.4-2 1.5-2.3H16.9c0 .4-.5 1.5-1.1 2.4-1.4 2.1-2 2.4-2.5 2.4-.1 0-.3 0-.4-.1-.7-.4-.7-1.4-.7-2.1v-.3-1.3c.1-1.3 0-1.3-.3-1.4-.3-.1-.5-.1-1.4-.1H10c-.5 0-1 0-1.4.1l.2.2c.4.5.4 1.5.4 1.7.1 1.3 0 2.9-.7 3.3-.1 0-.2.1-.4.1-.6 0-1.3-.7-2.5-2.5C5 2.9 4.5 1.8 4.5 1.8s0-.1-.1-.1-.2-.1-.2-.1H1.3h-.1c.4.9 2.5 5 4.8 7.2 2 1.9 4.3 2 4.7 2h1.4s.2 0 .2-.1v-.1c0-.2 0-2 1.2-2.3h.2z"/>
               </svg>
             </a>
           </li>
           <li class="social__item social-button">
-            <a class="social-button__link social-button__link--instagram" href="#">
+            <a class="social-button__link" href="#">
               <span class="visually-hidden">Мы в Instagram</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="#666666">
+              <svg class="social-button__icon social-button__icon--instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#666666">
                 <path class="st0" d="M11.8 1C13.6 1 15 2.4 15 4.2v7.7c0 1.7-1.4 3.1-3.1 3.1H4.2A3.2 3.2 0 0 1 1 11.8V4.2C1 2.4 2.4 1 4.2 1h7.6m0-1H4.2A4.2 4.2 0 0 0 0 4.2v7.7C0 14.1 1.9 16 4.2 16h7.7c2.3 0 4.2-1.9 4.2-4.2V4.2C16 1.9 14.1 0 11.8 0z"/>
                 <path class="st0" d="M8 4.9c1.7 0 3.1 1.4 3.1 3.1 0 1.7-1.4 3.1-3.1 3.1A3.1 3.1 0 0 1 4.9 8c0-1.7 1.4-3.1 3.1-3.1m0-1C5.7 3.9 3.9 5.7 3.9 8s1.8 4.1 4.1 4.1 4.1-1.8 4.1-4.1S10.3 3.9 8 3.9z"/>
                 <circle class="st0" cx="12.3" cy="3.7" r=".9"/>
@@ -320,9 +354,9 @@
             </a>
           </li>
           <li class="social__item social-button">
-            <a class="social-button__link social-button__link--facebook" href="#">
+            <a class="social-button__link" href="#">
               <span class="visually-hidden">Мы в Facebook</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 19" width="10" height="19" fill="#666666">
+              <svg class="social-button__icon social-button__icon--facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 19" width="10" height="19" fill="#666666">
                 <path d="M7.1 19H2v-8.8H0V5.8h1.9c-.1-2 .2-3.4 1.1-4.4C3.8.5 5 .1 6.5 0H10v4.2H7.2c-.1.2-.2.8-.2 1.6h3v4.4H7.1V19zm-4-1h2.8V9.1h2.9V6.8H5.9v-.5c0-1.4 0-2.6.7-3.1l.1-.1h2.1V1H6.5c-1.2.1-2 .4-2.6 1-.8.8-1 2.3-.8 4.2l.1.6H1.1v2.3h2V18z"/>
               </svg>
             </a>
