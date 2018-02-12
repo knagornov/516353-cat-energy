@@ -48,8 +48,7 @@
 .additionally__order-all {
   position: relative;
 
-  display: flex;
-  flex-direction: column;
+  display: block;
 
   box-sizing: border-box;
   width: 280px;
@@ -72,8 +71,6 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
 
-  align-items: center;
-
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
@@ -94,12 +91,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-
     width: 708px;
     height: 200px;
     margin-top: 69px;
-    padding-top: 0;
+    padding-top: 72px;
     padding-right: 100px;
     padding-left: 423px;
 
@@ -124,7 +119,7 @@
     width: 245px;
     height: 289px;
     margin: 0;
-    padding-top: 140px;
+    padding-top: 187px;
     padding-right: 30px;
     padding-left: 30px;
 

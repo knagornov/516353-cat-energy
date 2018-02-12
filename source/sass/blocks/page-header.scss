@@ -7,18 +7,14 @@
     max-width: 768px;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 26px;
-    padding-right: 30px;
-    padding-bottom: 32px;
-    padding-left: 30px;
+    padding: 24px 30px 24px;
 
-    align-items: center;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1300px;
-    padding-top: 56px;
+    padding-top: 54px;
     padding-right: 40px;
     padding-bottom: 0;
     padding-left: 40px;
@@ -46,17 +42,16 @@
 
   box-sizing: border-box;
   width: 320px;
-  min-height: 65px;
+  height: 65px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 20px;
+  padding: 10px 20px;
 
-  justify-content: space-between;
   align-items: center;
 
   @media (min-width: $tablet-width) {
     width: auto;
-    min-height: auto;
+    height: auto;
     margin: 0;
     padding: 0;
 
@@ -72,7 +67,7 @@
   width: 24px;
   height: 18px;
   margin: 0;
-  margin-left: 8px;
+  margin-left: auto;
   padding: 0;
 
   cursor: pointer;
@@ -81,6 +76,7 @@
   border-radius: none;
   outline: none;
   background-color: transparent;
+  background-image: linear-gradient(to bottom, transparent 8px, #222222 8px, #222222 10px, transparent 10px);
 
   &::before,
   &::after {
@@ -97,8 +93,6 @@
 
   &::before {
     top: 0;
-
-    box-shadow: 0 8px 0 0 #222222;
   }
 
   &::after {
@@ -109,16 +103,20 @@
     display: none;
   }
 
+  &--active {
+    background-image: none;
+  }
+
   &--active::before {
-    top: calc(50% - 1px);
+    top: 50%;
+    margin-top: -1px;
 
     transform: rotate(45deg);
-
-    box-shadow: none;
   }
 
   &--active::after {
-    bottom: calc(50% - 1px);
+    bottom: 50%;
+    margin-bottom: -1px;
 
     transform: rotate(-45deg);
   }

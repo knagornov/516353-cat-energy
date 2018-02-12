@@ -1,6 +1,5 @@
 .slider {
   display: flex;
-  justify-content: space-between;
 
   position: relative;
 
@@ -84,11 +83,7 @@
       right: 2px;
       left: auto;
 
-      display: flex;
-
       width: 352px;
-
-      justify-content: flex-end;
     }
   }
 
@@ -116,6 +111,10 @@
     min-width: 690px;
     max-width: 690px;
     height: 517px;
+
+    &--after {
+      float: right;
+    }
   }
 }
 
@@ -134,10 +133,12 @@
 
   &--before {
     margin-left: 44px;
+    margin-right: auto;
   }
 
   &--after {
     margin-right: 38px;
+    margin-left: auto;
   }
 
   &--before::before,
@@ -225,12 +226,12 @@
     top: 530px;
     left: 337px;
 
-    display: flex;
+    display: block;
 
     box-sizing: border-box;
     width: 34px;
     height: 34px;
-    padding: 0;
+    padding: 12px;
 
     cursor: pointer;
 
@@ -240,9 +241,10 @@
     background-color: #ffffff;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 
-    justify-content: center;
-
     &::before {
+      position: relative;
+      display: block;
+
       width: 8px;
       height: 8px;
 
