@@ -29,20 +29,9 @@
 }
 
 .social-button__icon {
-  &--vkontakte {
-    width: 22px;
-    height: 12px;
-  }
+  pointer-events: none;
 
-  &--instagram {
-    width: 16px;
-    height: 16px;
-  }
-
-  &--facebook {
-    width: 10px;
-    height: 19px;
-  }
+  fill: #666666;
 
   @media (min-width: $tablet-width) {
     &--vkontakte {
@@ -58,7 +47,7 @@
     &--facebook {
       width: 14px;
       height: 28px;
-      margin-right: auto;
+      margin-right: 16px;
     }
   }
 }

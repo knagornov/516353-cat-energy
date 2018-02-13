@@ -164,7 +164,8 @@
     fill: #68b738;
   }
 
-  &:active .page-footer__copyright-icon {
+  &:active .page-footer__copyright-icon,
+  .page-footer__copyright-icon:active {
     opacity: 0.3;
 
     fill: #68b738;
@@ -173,4 +174,8 @@
   @media (min-width: $tablet-width) {
     width: 162px;
   }
+}
+
+.page-footer__copyright-icon {
+  fill: #666666;
 }
