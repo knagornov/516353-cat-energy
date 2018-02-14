@@ -9,6 +9,12 @@
     justify-content: flex-start;
   }
 
+  &--icon {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
   &--main-page {
     pointer-events: none;
   }
@@ -22,10 +28,6 @@
     height: 38px;
     margin-bottom: 5px;
     margin-right: 57px;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
   }
 
   &--header {

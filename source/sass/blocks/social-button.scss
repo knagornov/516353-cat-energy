@@ -33,6 +33,21 @@
 
   fill: #666666;
 
+  &--vkontakte {
+    width: 22px;
+    height: 12px;
+  }
+
+  &--instagram {
+    width: 16px;
+    height: 16px;
+  }
+
+   &--facebook {
+    width: 10px;
+    height: 19px;
+  }
+
   @media (min-width: $tablet-width) {
     &--vkontakte {
       width: 30px;
