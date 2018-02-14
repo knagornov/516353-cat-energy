@@ -18,6 +18,11 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    padding-top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
   }
 }
 
@@ -47,26 +52,25 @@
 .navigation__link {
   position: relative;
 
-  display: flex;
+  display: block;
 
   box-sizing: border-box;
   width: 320px;
   height: 65px;
   padding: 20px;
+  padding-top: 23px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
 
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 
   color: #111111;
   outline: none;
-
-  justify-content: center;
-  align-items: center;
 
   &:hover,
   &:focus {
@@ -77,20 +81,14 @@
     opacity: 0.3;
   }
 
-  &--active:hover,
-  &--active:focus,
-  &--active:active,
-  &--main-page-active:hover,
-  &--main-page-active:focus,
-  &--main-page-active:active {
-    cursor: default;
-
-    opacity: 1;
+  &--active,
+  &--main-page-active {
+    pointer-events: none;
   }
 
   @media (min-width: $tablet-width) {
     width: auto;
-    height: 42px;
+    height: 34px;
     padding: 0;
 
     font-size: 18px;
@@ -106,8 +104,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 34px;
+
     font-size: 20px;
-    height: 45px;
 
     &--main-page {
       color: #ffffff;

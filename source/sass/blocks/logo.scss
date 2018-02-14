@@ -1,20 +1,16 @@
 .logo {
-  display: block;
+  display: flex;
+
   outline: none;
 
-  &:hover,
-  &:focus {
-    opacity: 0.8;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
   }
 
-  &:active {
-    opacity: 0.6;
-  }
-
-  &--main-page:hover,
-  &--main-page:focus,
-  &--main-page:active {
-    opacity: 1;
+  &--main-page {
+    pointer-events: none;
   }
 }
 
@@ -25,6 +21,7 @@
     width: 33px;
     height: 38px;
     margin-bottom: 5px;
+    margin-right: 57px;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -34,6 +31,7 @@
   &--header {
     width: 101px;
     height: 18px;
+    margin-right: 8px;
 
     @media (min-width: $tablet-width) {
       width: 173px;
@@ -49,5 +47,14 @@
   &--footer {
     width: 128px;
     height: 24px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

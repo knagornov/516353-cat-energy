@@ -3,7 +3,7 @@
 
   width: 22px;
   height: 22px;
-  padding: 15px 10px;
+  padding: 10px;
 
   outline: none;
 
@@ -16,12 +16,12 @@
     padding: 15px 6px;
   }
 
-  &:hover svg,
-  &:focus svg {
+  &:hover .social-button__icon,
+  &:focus .social-button__icon {
     fill: #68b738;
   }
 
-  &:active svg {
+  &:active .social-button__icon {
     opacity: 0.3;
 
     fill: #68b738;
@@ -29,20 +29,9 @@
 }
 
 .social-button__icon {
-  &--vkontakte {
-    width: 22px;
-    height: 12px;
-  }
+  pointer-events: none;
 
-  &--instagram {
-    width: 16px;
-    height: 16px;
-  }
-
-  &--facebook {
-    width: 10px;
-    height: 19px;
-  }
+  fill: #666666;
 
   @media (min-width: $tablet-width) {
     &--vkontakte {
@@ -58,7 +47,7 @@
     &--facebook {
       width: 14px;
       height: 28px;
-      margin-right: auto;
+      margin-right: 16px;
     }
   }
 }

@@ -9,25 +9,24 @@
   margin-right: auto;
   margin-left: auto;
   padding: 20px;
-  padding-top: 24px;
+  padding-top: 28px;
 
   justify-content: space-between;
-  align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 768px;
     min-height: 201px;
-    padding-right: 72px;
-    padding-left: 72px;
+    padding: 65px 72px 50px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     z-index: 1;
     top: 95px;
-    left: calc(50% - 610px);
+    left: 50%;
 
     width: 570px;
+    margin-left: -610px;
     padding-right: 75px;
     padding-left: 75px;
 

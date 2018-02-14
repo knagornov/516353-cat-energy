@@ -17,6 +17,8 @@
     &:last-child {
       min-height: 431px;
       margin-top: 140px;
+      padding-right: 38px;
+      padding-left: 38px;
 
       border: 1px solid #e6e6e6;
       background-color: #ffffff;
@@ -26,8 +28,6 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-
-    background-color: #f2f2f2; //временно
   }
 }
 
@@ -49,7 +49,28 @@
 
     width: auto;
     margin: 0;
-    padding: 40px 38px;
+    padding: 0;
+    padding-bottom: 40px;
+
+    align-items: center;
+  }
+}
+
+.food-item__description-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  width: 140px;
+
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 36px;
+    padding-right: 38px;
+    padding-bottom: 33px;
+    padding-left: 38px;
 
     align-items: center;
   }
@@ -62,7 +83,6 @@
 
   @media (min-width: $tablet-width) {
     max-width: 170px;
-    margin-top: 36px;
     margin-right: 0;
     margin-bottom: 15px;
     padding: 0;
@@ -86,26 +106,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-  }
-}
-
-.food-item__description-wrapper {
-  display: flex;
-  flex-direction: column;
-
-  width: 140px;
-
-  justify-content: center;
-
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    margin-bottom: 33px;
-
-    align-items: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 33px;
   }
 }
 
@@ -194,7 +194,7 @@
 
     content: "";
 
-    background-image: linear-gradient(to bottom, transparent calc(50% - 1px), #d3d3d3 calc(50% - 1px), #d3d3d3 calc(50% + 1px), transparent calc(50% + 1px)), linear-gradient(to right, transparent calc(50% - 1px), #d3d3d3 calc(50% - 1px), #d3d3d3 calc(50% + 1px), transparent calc(50% + 1px));
+    background-image: linear-gradient(to bottom, transparent 14px, #d3d3d3 13px, #d3d3d3 16px, transparent 16px), linear-gradient(to right, transparent 14px, #d3d3d3 14px, #d3d3d3 16px, transparent 16px);
   }
 
   @media (min-width: $tablet-width) {
@@ -206,7 +206,7 @@
       margin-top: 0;
       margin-bottom: 50px;
 
-      background-image: linear-gradient(to bottom, transparent calc(50% - 1px), #e6e6e6 calc(50% - 1px), #e6e6e6 calc(50% + 1px), transparent calc(50% + 1px)), linear-gradient(to right, transparent calc(50% - 1px), #e6e6e6 calc(50% - 1px), #e6e6e6 calc(50% + 1px), transparent calc(50% + 1px));
+      background-image: linear-gradient(to bottom, transparent 29px, #e6e6e6 29px, #e6e6e6 31px, transparent 31px), linear-gradient(to right, transparent 29px, #e6e6e6 29px, #e6e6e6 31px, transparent 31px);
     }
   }
 }
@@ -232,5 +232,15 @@
 
     font-size: 16px;
     line-height: normal;
+  }
+}
+
+.food-item__order {
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
   }
 }
