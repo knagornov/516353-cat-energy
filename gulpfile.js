@@ -8,6 +8,7 @@ var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var htmlmin = require("gulp-htmlmin");
 var svgstore = require("gulp-svgstore");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -43,6 +44,9 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
     .pipe(gulp.dest("build"));
 });
 
@@ -95,7 +99,7 @@ gulp.task("build", function (done) {
   run(
     "clean",
     "copy",
-    // "images",
+    "images",
     "style",
     "sprite",
     "html",
