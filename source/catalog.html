@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cat Energy - Каталог продукции</title>
-    <link rel="stylesheet" href="css/normalize-minified.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
       <div class="page-header__top-bar">
         <div class="page-header__logo-wrapper">
           <a class="logo logo--icon" href="index.html" aria-label="Переход на главную страницу">
-            <img class="logo__image logo__image--icon" src="img/icon-logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+            <img class="logo__image logo__image--icon" src="img/logo-icon-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
           </a>
           <a class="logo" href="index.html" aria-label="Переход на главную страницу">
             <picture>
@@ -271,14 +275,14 @@
                   <source type="image/webp" srcset="img/rice-small-mobile@1x.webp 1x, img/rice-small-mobile@2x.webp 2x">
                   <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
-                  <img class="food-item__image" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x"  alt="Фото Cat Energy Pro 500 грамм со вкусом риса">
+                  <img class="food-item__image" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Фото Cat Energy Pro 500 грамм со вкусом риса">
                 </picture>
               </a>
               <a class="food-item__order button" href="#">Заказать</a>
             </div>
           </li>
 
-          <li class="catalog__item food-item">
+          <li class="catalog__item food-item food-item--show-more">
             <div class="food-item__wrapper">
               <a class="food__show-more" href="#">Показать еще 100500&nbsp;товаров</a>
               <p class="food__tastes-info">На самом деле вкусов гораздо&nbsp;больше!</p>
@@ -359,21 +363,21 @@
           <li class="social__item social-button">
             <a class="social-button__link" href="#" aria-label="Мы в Вконтакте">
               <svg class="social-button__icon social-button__icon--vkontakte" width="22" height="12" role="img">
-                <use xlink:href="img/sprite.svg#vkontakte-icon"></use>
+                <use xlink:href="#icon-vkontakte"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social-button">
             <a class="social-button__link" href="#" aria-label="Мы в Instagram">
               <svg class="social-button__icon social-button__icon--instagram" width="16" height="16" role="img">
-                <use xlink:href="img/sprite.svg#instagram-icon"></use>
+                <use xlink:href="#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social-button">
             <a class="social-button__link" href="#" aria-label="Мы в Facebook">
               <svg class="social-button__icon social-button__icon--facebook" width="10" height="19" role="img">
-                <use xlink:href="img/sprite.svg#facebook-icon"></use>
+                <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -382,7 +386,7 @@
           <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy">
             HTML Academy
             <svg class="page-footer__copyright-icon" width="27" height="34" role="img">
-              <use xlink:href="img/sprite.svg#copyright-icon"></use>
+              <use xlink:href="#icon-copyright"></use>
             </svg>
           </a>
         </div>
