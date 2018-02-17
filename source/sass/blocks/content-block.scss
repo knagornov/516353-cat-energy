@@ -20,7 +20,7 @@
     &--example {
       padding-bottom: 68px;
 
-      background-image: linear-gradient(to bottom, #ffffff 619px, transparent 619px), linear-gradient(to right, #f2f2f2 calc(50% + 1px), #eaeaea calc(50% + 1px));
+      background-image: linear-gradient(to bottom, #ffffff 619px, transparent 619px), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
     }
   }
 
@@ -34,7 +34,7 @@
     &--example {
       padding-bottom: 0;
 
-      background-image: linear-gradient(to bottom, #ffffff 199px, transparent 199px), linear-gradient(to right, #f2f2f2 calc(50% + 326px), #eaeaea calc(50% + 326px));
+      background-image: linear-gradient(to bottom, #ffffff 199px, transparent 199px), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
     }
   }
 }
