@@ -10,6 +10,8 @@
   }
 
   &--icon {
+    margin-right: 57px;
+
     @media (min-width: $tablet-width) {
       display: none;
     }
@@ -27,13 +29,11 @@
     width: 33px;
     height: 38px;
     margin-bottom: 5px;
-    margin-right: 57px;
   }
 
   &--header {
     width: 101px;
     height: 18px;
-    margin-right: 8px;
 
     @media (min-width: $tablet-width) {
       width: 173px;
