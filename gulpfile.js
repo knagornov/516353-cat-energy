@@ -47,13 +47,13 @@ gulp.task("html", function () {
 });
 
 gulp.task("images", function () {
-  return gulp.src("source/img/*.{png,jpg,svg}")
+  return gulp.src("build/img/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("webp", function () {
@@ -95,6 +95,7 @@ gulp.task("build", function (done) {
   run(
     "clean",
     "copy",
+    "images",
     "style",
     "sprite",
     "html",
