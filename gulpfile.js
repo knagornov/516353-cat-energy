@@ -95,7 +95,7 @@ gulp.task("build", function (done) {
   run(
     "clean",
     "copy",
-    "images",
+    // "images",
     "style",
     "sprite",
     "html",

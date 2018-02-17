@@ -12,14 +12,12 @@
   }
 }
 
-.page-footer__map {
+.page-footer__map-wrapper {
   background-color: #f2f2f2;
 }
 
-.page-footer__map-link {
+.page-footer__map {
   position: relative;
-
-  display: block;
 
   width: 320px;
   height: 362px;
@@ -86,6 +84,29 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.png");
     }
+  }
+}
+
+.page-footer__interactive-map {
+  position: relative;
+  z-index: 1;
+
+  display: block;
+
+  width: 320px;
+  height: 362px;
+
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 396px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: 1440px;
+    height: 400px;
   }
 }
 
