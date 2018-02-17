@@ -30,7 +30,7 @@
 
     content: "";
 
-    background: url("../img/icon-cat-slim.svg") no-repeat;
+    background: url("../img/cat-slim.svg") no-repeat;
   }
 
   &--pro::after {
@@ -43,7 +43,7 @@
 
     content: "";
 
-    background: url("../img/icon-cat-pro.svg") no-repeat;
+    background: url("../img/cat-pro.svg") no-repeat;
   }
 
   @media (min-width: $tablet-width) {
@@ -190,7 +190,7 @@
     content: "";
     vertical-align: baseline;
 
-    background-image: url("../img/icon-right-arrow.svg");
+    background-image: url("../img/right-arrow.svg");
     background-repeat: no-repeat;
     background-position: -9px 0;
   }

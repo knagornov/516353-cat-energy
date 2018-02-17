@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cat Energy - Подбор программы</title>
-    <link rel="stylesheet" href="css/normalize-minified.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
       <div class="page-header__top-bar">
         <div class="page-header__logo-wrapper">
           <a class="logo logo--icon" href="index.html" aria-label="Переход на главную страницу">
-            <img class="logo__image logo__image--icon" src="img/icon-logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+            <img class="logo__image logo__image--icon" src="img/logo-icon-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
           </a>
           <a class="logo" href="index.html" aria-label="Переход на главную страницу">
             <picture>
@@ -58,7 +62,7 @@
                   <input class="form__field" id="cat-name" type="text" name="name" placeholder="Барсик">
                 </p>
                 <p class="form__item">
-                  <label class="form__label"  for="cat-weight">Вес (кг):*</label>
+                  <label class="form__label" for="cat-weight">Вес (кг):*</label>
                   <input class="form__field" id="cat-weight" type="text" name="weight" placeholder="7">
                 </p>
                 <p class="form__item">
@@ -70,7 +74,7 @@
             <div class="form__aims-wrapper">
               <ul class="form__aims">
                 <li class="form__aim">
-                  <input class="form__radio visually-hidden" id="lose-weight" type="radio" name="aim" checked>
+                  <input class="form__radio visually-hidden" id="lose-weight" type="radio" name="aim" checked="">
                   <label class="form__label form__label--radio" for="lose-weight">Похудение</label>
                 </li>
                 <li class="form__aim">
@@ -97,14 +101,14 @@
               <label class="form__label">E-mail:*</label>
               <input class="form__field form__field--email" type="email" placeholder="kuklachev@gmail.com">
               <svg class="form__mail-icon" width="17" height="3" aria-hidden="true" role="presentation">
-                <use xlink:href="img/sprite.svg#mail-icon"></use>
+                <use xlink:href="#icon-mail"></use>
               </svg>
             </p>
             <p class="form__item form__item--contacts">
               <label class="form__label">Телефон:*</label>
               <input class="form__field form__field--phone" type="tel" placeholder="8 (960) 900-60-90">
               <svg class="form__phone-icon" width="20" height="20" aria-hidden="true" role="presentation">
-                <use xlink:href="img/sprite.svg#phone-icon"></use>
+                <use xlink:href="#icon-phone"></use>
               </svg>
             </p>
           </div>
@@ -132,7 +136,7 @@
           <div class="form__wrapper form__wrapper--additional-products">
             <ul class="form__additional-products">
               <li class="form__additional-product">
-                <input class="form__checkbox visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
+                <input class="form__checkbox visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked="">
                 <label class="form__label form__label--checkbox" for="sweetener">Сахарозаменитель</label>
               </li>
               <li class="form__additional-product">
@@ -180,21 +184,21 @@
           <li class="social__item social-button">
             <a class="social-button__link" href="#" aria-label="Мы в Вконтакте">
               <svg class="social-button__icon social-button__icon--vkontakte" width="22" height="12" role="img">
-                <use xlink:href="img/sprite.svg#vkontakte-icon"></use>
+                <use xlink:href="#icon-vkontakte"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social-button">
             <a class="social-button__link" href="#" aria-label="Мы в Instagram">
               <svg class="social-button__icon social-button__icon--instagram" width="16" height="16" role="img">
-                <use xlink:href="img/sprite.svg#instagram-icon"></use>
+                <use xlink:href="#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social-button">
             <a class="social-button__link" href="#" aria-label="Мы в Facebook">
               <svg class="social-button__icon social-button__icon--facebook" width="10" height="19" role="img">
-                <use xlink:href="img/sprite.svg#facebook-icon"></use>
+                <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -203,7 +207,7 @@
           <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy">
             HTML Academy
             <svg class="page-footer__copyright-icon" width="27" height="34" role="img">
-              <use xlink:href="img/sprite.svg#copyright-icon"></use>
+              <use xlink:href="#icon-copyright"></use>
             </svg>
           </a>
         </div>

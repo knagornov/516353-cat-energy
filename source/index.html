@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <title>Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/normalize-minified.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header page-header--main-page">
       <div class="page-header__top-bar">
         <div class="page-header__logo-wrapper">
           <a class="logo logo--icon logo--main-page">
-            <img class="logo__image logo__image--icon" src="img/icon-logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+            <img class="logo__image logo__image--icon" src="img/logo-icon-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
           </a>
           <a class="logo logo--main-page">
             <picture>
@@ -114,7 +118,7 @@
             </div>
 
             <div class="example__slider slider">
-              <input class="slider__input-before visually-hidden" id="slider-before" type="radio" name="slider-toggle" checked>
+              <input class="slider__input-before visually-hidden" id="slider-before" type="radio" name="slider-toggle" checked="">
               <label class="slider__label slider__label--before" for="slider-before">Было</label>
               <input class="slider__input-after visually-hidden" id="slider-after" type="radio" name="slider-toggle">
               <label class="slider__label slider__label--after" for="slider-after">Стало</label>
@@ -169,21 +173,21 @@
           <li class="social__item social-button">
             <a class="social-button__link" href="#" aria-label="Мы в Вконтакте">
               <svg class="social-button__icon social-button__icon--vkontakte" width="22" height="12" role="img">
-                <use xlink:href="img/sprite.svg#vkontakte-icon"></use>
+                <use xlink:href="#icon-vkontakte"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social-button">
             <a class="social-button__link" href="#" aria-label="Мы в Instagram">
               <svg class="social-button__icon social-button__icon--instagram" width="16" height="16" role="img">
-                <use xlink:href="img/sprite.svg#instagram-icon"></use>
+                <use xlink:href="#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social-button">
             <a class="social-button__link" href="#" aria-label="Мы в Facebook">
               <svg class="social-button__icon social-button__icon--facebook" width="10" height="19" role="img">
-                <use xlink:href="img/sprite.svg#facebook-icon"></use>
+                <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -192,7 +196,7 @@
           <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy">
             HTML Academy
             <svg class="page-footer__copyright-icon" width="27" height="34" role="img">
-              <use xlink:href="img/sprite.svg#copyright-icon"></use>
+              <use xlink:href="#icon-copyright"></use>
             </svg>
           </a>
         </div>
