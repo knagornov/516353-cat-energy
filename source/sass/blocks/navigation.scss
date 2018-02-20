@@ -70,15 +70,14 @@
   text-transform: uppercase;
 
   color: #111111;
-  outline: none;
 
   &:hover,
   &:focus {
-    opacity: 0.6;
+    color: rgba(#111111, 0.6);
   }
 
   &:active {
-    opacity: 0.3;
+    color: rgba(#111111, 0.3);
   }
 
   &--active,
@@ -110,6 +109,15 @@
 
     &--main-page {
       color: #ffffff;
+    }
+
+    &--main-page:hover,
+    &--main-page:focus {
+      color: rgba(#ffffff, 0.6);
+    }
+
+    &--main-page:active {
+      color: rgba(#ffffff, 0.3);
     }
 
     &--main-page-active {

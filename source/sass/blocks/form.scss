@@ -475,7 +475,9 @@
 }
 
 .form__label--radio:hover::before,
-.form__label--checkbox:hover::before {
+.form__label--checkbox:hover::before,
+.form__radio:focus + .form__label--radio::before,
+.form__checkbox:focus + .form__label--checkbox::before {
   border-color: #bbbbbb;
 }
 

@@ -26,6 +26,7 @@
     "stylelint": "8.4.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
+
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" —syntax scss",

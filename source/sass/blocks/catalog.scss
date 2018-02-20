@@ -36,11 +36,3 @@
     padding-left: 40px;
   }
 }
-
-.catalog__item {
-  @media (min-width: $desktop-width) {
-    &:nth-child(n + 5) {
-      margin-top: 3px;
-    }
-  }
-}
